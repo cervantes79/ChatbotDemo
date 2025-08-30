@@ -1,0 +1,25 @@
+FREQUENTLY ASKED QUESTIONS
+
+Q: How do I install ACME Widget?
+A: Download the installer from our website, run it as administrator, and follow the on-screen instructions. Installation takes 5-10 minutes.
+
+Q: What is your return policy?
+A: We offer a 30-day money-back guarantee. Items must be returned in original condition. Refunds are processed within 5-7 business days.
+
+Q: Do you offer technical support?
+A: Yes! Pro customers get 24/7 phone and email support. Standard customers get email support during business hours. Lite customers have access to community forums.
+
+Q: Can I upgrade my license later?
+A: Absolutely! Contact our sales team and pay only the difference between your current license and the new one.
+
+Q: What payment methods do you accept?
+A: We accept all major credit cards, PayPal, and bank transfers for enterprise customers.
+
+Q: Is there a mobile app?
+A: Yes, our mobile app is available for iOS and Android. It includes basic monitoring and notification features.
+
+Q: How often do you release updates?
+A: We release minor updates monthly and major updates quarterly. All updates are free for active license holders.
+
+Q: Do you offer training?
+A: We provide online tutorials, documentation, and webinars. Enterprise customers can request custom training sessions.

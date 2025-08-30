@@ -1,0 +1,12 @@
+langchain==0.1.0
+langchain-openai==0.0.5
+langchain-community==0.0.10
+chromadb==0.4.22
+streamlit==1.29.0
+python-dotenv==1.0.0
+PyPDF2==3.0.1
+requests==2.31.0
+tiktoken==0.5.2
+faiss-cpu==1.7.4
+sentence-transformers==2.2.2
+reportlab==4.0.7
