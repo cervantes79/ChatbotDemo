@@ -3,12 +3,12 @@ import os
 import logging
 from pathlib import Path
 from dotenv import load_dotenv
-from src.agent_core import AgenticChatbot
+from src.agent_core import ICARChatbot
 
 # Page configuration
 st.set_page_config(
-    page_title="Agentic RAG Chatbot Demo",
-    page_icon="🤖",
+    page_title="ICAR Chatbot Demo - Intelligent Concept-Aware RAG",
+    page_icon="🧠",
     layout="wide",
     initial_sidebar_state="expanded"
 )
@@ -19,7 +19,7 @@ logger = logging.getLogger(__name__)
 
 @st.cache_resource
 def initialize_chatbot():
-    """Initialize the chatbot (cached for performance)"""
+    """Initialize the ICAR chatbot (cached for performance)"""
     load_dotenv()
     
     # Check required environment variables
@@ -27,22 +27,23 @@ def initialize_chatbot():
         st.error("OPENAI_API_KEY not found. Please set it in your .env file.")
         return None
     
-    chatbot = AgenticChatbot()
+    chatbot = ICARChatbot()
     
     if not chatbot.initialize():
-        st.error("Failed to initialize chatbot")
+        st.error("Failed to initialize ICAR chatbot")
         return None
     
-    # Load documents if available
+    # Load documents with ICAR concept extraction
     data_dir = "data"
     if os.path.exists(data_dir):
-        with st.spinner("Loading documents into knowledge base..."):
+        with st.spinner("Loading documents with ICAR concept extraction..."):
             success = chatbot.load_documents(data_dir)
             if success:
                 stats = chatbot.get_stats()
-                st.success(f"Knowledge base loaded with {stats['documents_count']} document chunks")
+                st.success(f"ICAR: Knowledge base loaded with {stats['documents_count']} document chunks")
+                st.info(f"ICAR: Extracted {stats.get('concepts_extracted', 0)} concepts")
             else:
-                st.warning("Failed to load documents, but chatbot will still work for basic queries")
+                st.warning("Failed to load documents, but ICAR chatbot will still work for basic queries")
     
     return chatbot
 
@@ -67,35 +68,41 @@ def create_sample_data():
 
 def main():
     # Title and header
-    st.title("🤖 Agentic RAG Chatbot Demo")
+    st.title("🧠 ICAR Chatbot Demo - Intelligent Concept-Aware RAG")
+    st.markdown("**Author**: Barış Genç | **Methodology**: ICAR (Intelligent Concept-Aware RAG)")
     st.markdown("---")
     
     # Sidebar
     with st.sidebar:
-        st.header("System Information")
+        st.header("🧠 ICAR System Information")
         
         # Initialize chatbot
         chatbot = initialize_chatbot()
         
         if chatbot:
             stats = chatbot.get_stats()
-            st.success("✅ Chatbot Initialized")
+            st.success("✅ ICAR System Initialized")
             st.info(f"📄 Documents: {stats.get('documents_count', 0)}")
+            st.info(f"🧠 Concepts: {stats.get('concepts_extracted', 0)}")
+            st.info(f"📊 Index Size: {stats.get('concept_index_size', 0)}")
             st.info(f"🗄️ Vector Store: {'✅' if stats.get('vector_store_ready', False) else '❌'}")
             st.info(f"🌤️ Weather API: {'✅' if stats.get('weather_api_ready', False) else '❌'}")
+            st.info(f"👨‍💻 Author: {stats.get('methodology', 'Barış Genç')}")
         else:
-            st.error("❌ Chatbot Not Initialized")
+            st.error("❌ ICAR System Not Initialized")
             st.stop()
         
         st.markdown("---")
-        st.header("Capabilities")
+        st.header("🧠 ICAR Capabilities")
         st.markdown("""
-        This chatbot can:
-        - 📚 **Knowledge Base Search**: Answer questions using loaded documents
-        - 🌤️ **Weather Information**: Get current weather for any city
-        - 💬 **General Conversation**: Respond to greetings and basic questions
+        This ICAR-powered chatbot can:
+        - 🎯 **Concept Analysis**: Understand user intent through concept extraction
+        - 📚 **Intelligent Retrieval**: Answer questions using concept-based matching
+        - 🔍 **Smart Search**: Fall back to semantic search when needed  
+        - 🌤️ **Weather Information**: Get current weather with enhanced detection
+        - 💬 **Natural Conversation**: Respond to greetings with concept awareness
         
-        The bot explains its decision-making process for each response.
+        The ICAR system explains its concept analysis and decision-making process for each response.
         """)
         
         # Sample data creation
@@ -107,7 +114,7 @@ def main():
     col1, col2 = st.columns([2, 1])
     
     with col1:
-        st.header("Chat Interface")
+        st.header("🧠 ICAR Chat Interface")
         
         # Initialize session state
         if "messages" not in st.session_state:
@@ -124,8 +131,8 @@ def main():
                     with st.chat_message("assistant"):
                         st.write(message["content"])
                         if "reasoning" in message and "action" in message:
-                            with st.expander("🧠 Decision Process"):
-                                st.write(f"**Reasoning:** {message['reasoning']}")
+                            with st.expander("🧠 ICAR Analysis Process"):
+                                st.write(f"**ICAR Reasoning:** {message['reasoning']}")
                                 st.write(f"**Action Taken:** {message['action']}")
         
         # Chat input
@@ -133,8 +140,8 @@ def main():
             # Add user message to chat
             st.session_state.messages.append({"role": "user", "content": prompt})
             
-            # Process the query
-            with st.spinner("Thinking..."):
+            # Process the query with ICAR
+            with st.spinner("ICAR analyzing your query..."):
                 result = chatbot.process_query(prompt)
             
             # Add bot response to chat
@@ -150,7 +157,7 @@ def main():
             st.rerun()
     
     with col2:
-        st.header("Example Queries")
+        st.header("🧠 ICAR Example Queries")
         
         example_queries = [
             "Hello! How are you?",
@@ -163,12 +170,12 @@ def main():
             "What's the weather in Tokyo?"
         ]
         
-        st.markdown("Try these example queries:")
+        st.markdown("Try these ICAR-powered example queries:")
         for query in example_queries:
             if st.button(f"💬 {query}", key=f"example_{query[:20]}"):
                 st.session_state.messages.append({"role": "user", "content": query})
                 
-                with st.spinner("Processing..."):
+                with st.spinner("ICAR processing..."):
                     result = chatbot.process_query(query)
                 
                 bot_message = {
@@ -186,17 +193,20 @@ def main():
             st.rerun()
         
         st.markdown("---")
-        st.header("How It Works")
+        st.header("🧠 How ICAR Works")
         st.markdown("""
-        **Agentic Decision Making:**
+        **ICAR Intelligence by Barış Genç:**
         
-        1. **Input Analysis**: The bot analyzes your query
-        2. **Action Selection**: It decides which tool to use:
-           - Direct response for greetings
-           - Knowledge base for specific info
-           - Weather API for weather queries
-        3. **Response Generation**: Executes the chosen action
-        4. **Transparency**: Shows its reasoning process
+        1. **Concept Extraction**: ICAR analyzes your query to identify key concepts
+        2. **Intelligent Matching**: It chooses the optimal strategy:
+           - ICAR Direct Response for conversational queries
+           - ICAR Concept-Based Retrieval for specific information
+           - ICAR Semantic Search for complex queries
+           - ICAR Weather API for weather information
+        3. **Smart Execution**: Executes the chosen action with concept awareness
+        4. **Transparent Analysis**: Shows detailed ICAR reasoning process
+        
+        **ICAR = Intelligent Concept-Aware RAG**
         """)
 
 if __name__ == "__main__":

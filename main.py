@@ -5,7 +5,7 @@ import sys
 import logging
 from pathlib import Path
 from dotenv import load_dotenv
-from src.agent_core import AgenticChatbot
+from src.agent_core import ICARChatbot
 
 # Setup logging
 logging.basicConfig(
@@ -63,55 +63,64 @@ def create_sample_data():
             logger.warning(f"Error creating sample documents: {e}")
 
 def initialize_chatbot():
-    """Initialize the chatbot and load documents"""
-    logger.info("Initializing Agentic RAG Chatbot...")
+    """Initialize the ICAR chatbot and load documents with concept extraction"""
+    logger.info("Initializing ICAR Chatbot (Intelligent Concept-Aware RAG)...")
+    logger.info("Author: Barış Genç")
     
-    chatbot = AgenticChatbot()
+    chatbot = ICARChatbot()
     
     if not chatbot.initialize():
-        logger.error("Failed to initialize chatbot")
+        logger.error("Failed to initialize ICAR chatbot")
         return None
     
-    # Load documents
+    # Load documents with concept extraction
     data_dir = "data"
     if os.path.exists(data_dir):
-        logger.info("Loading documents into knowledge base...")
+        logger.info("Loading documents with ICAR concept extraction...")
         success = chatbot.load_documents(data_dir)
         if success:
             stats = chatbot.get_stats()
-            logger.info(f"Knowledge base loaded with {stats['documents_count']} document chunks")
+            logger.info(f"ICAR: Knowledge base loaded with {stats['documents_count']} document chunks")
+            logger.info(f"ICAR: Extracted {stats.get('concepts_extracted', 0)} concepts")
         else:
-            logger.warning("Failed to load documents, but chatbot will still work for basic queries")
+            logger.warning("Failed to load documents, but ICAR chatbot will still work for basic queries")
     else:
-        logger.warning("Data directory not found. Chatbot will work without knowledge base.")
+        logger.warning("Data directory not found. ICAR will work without knowledge base.")
     
     return chatbot
 
 def print_welcome():
-    """Print welcome message and instructions"""
-    print("\n" + "="*60)
-    print("🤖 AGENTIC RAG CHATBOT DEMO")
-    print("="*60)
-    print("Welcome! This chatbot can:")
-    print("• Answer questions using loaded documents")
-    print("• Provide weather information for cities")
-    print("• Respond to general conversations")
-    print("\nThe bot will explain its reasoning for each response.")
+    """Print welcome message and ICAR system information"""
+    print("\n" + "="*70)
+    print("🧠 ICAR CHATBOT DEMO - Intelligent Concept-Aware RAG")
+    print("="*70)
+    print("Author: Barış Genç | Methodology: ICAR")
+    print("\nThis advanced chatbot uses ICAR methodology and can:")
+    print("• 🎯 Understand your intent through concept extraction")
+    print("• 📚 Answer questions using intelligent concept-based retrieval")
+    print("• 🌤️ Provide weather information for cities")
+    print("• 💬 Engage in natural conversations")
+    print("• 🧠 Show detailed reasoning behind each decision")
+    print("\nThe ICAR system will explain its concept analysis for each response.")
     print("Type 'quit', 'exit', or 'bye' to end the conversation.")
-    print("Type 'stats' to see system information.")
-    print("="*60 + "\n")
+    print("Type 'stats' to see ICAR system information.")
+    print("="*70 + "\n")
 
 def print_stats(chatbot):
-    """Print chatbot statistics"""
+    """Print ICAR system statistics"""
     stats = chatbot.get_stats()
-    print("\n" + "-"*40)
-    print("SYSTEM STATISTICS")
-    print("-"*40)
+    print("\n" + "-"*50)
+    print("🧠 ICAR SYSTEM STATISTICS")
+    print("-"*50)
+    print(f"System: {stats.get('icar_system', 'ICAR')}")
+    print(f"Methodology: {stats.get('methodology', 'By Barış Genç')}")
     print(f"Documents loaded: {stats.get('documents_count', 0)}")
-    print(f"Chatbot initialized: {stats.get('is_initialized', False)}")
+    print(f"Concepts extracted: {stats.get('concepts_extracted', 0)}")
+    print(f"Concept index size: {stats.get('concept_index_size', 0)}")
+    print(f"ICAR initialized: {stats.get('is_initialized', False)}")
     print(f"Vector store ready: {stats.get('vector_store_ready', False)}")
     print(f"Weather API ready: {stats.get('weather_api_ready', False)}")
-    print("-"*40 + "\n")
+    print("-"*50 + "\n")
 
 def main():
     """Main CLI interface"""
@@ -140,7 +149,7 @@ def main():
                 
                 # Check for exit commands
                 if user_input.lower() in ['quit', 'exit', 'bye', 'q']:
-                    print("\nBot: Goodbye! Thank you for using the Agentic RAG Chatbot.")
+                    print("\nICAR Bot: Goodbye! Thank you for using the ICAR Chatbot by Barış Genç.")
                     break
                 
                 # Check for stats command
@@ -152,27 +161,27 @@ def main():
                 if not user_input:
                     continue
                 
-                # Process the query
-                print("\nBot: ", end="")
+                # Process the query with ICAR
+                print("\nICAR Bot: ", end="")
                 result = chatbot.process_query(user_input)
                 
                 # Display response
                 print(result['response'])
                 
-                # Display reasoning
-                print(f"\n💭 Decision Process: {result['reasoning']}")
+                # Display ICAR reasoning
+                print(f"\n💭 ICAR Analysis: {result['reasoning']}")
                 print(f"🔧 Action Taken: {result['action_taken']}")
                 print()
                 
             except KeyboardInterrupt:
-                print("\n\nBot: Goodbye! Thank you for using the Agentic RAG Chatbot.")
+                print("\n\nICAR Bot: Goodbye! Thank you for using the ICAR Chatbot by Barış Genç.")
                 break
             except EOFError:
-                print("\n\nBot: Goodbye! Thank you for using the Agentic RAG Chatbot.")
+                print("\n\nICAR Bot: Goodbye! Thank you for using the ICAR Chatbot by Barış Genç.")
                 break
             except Exception as e:
-                logger.error(f"Error in main loop: {e}")
-                print(f"\nBot: I encountered an error: {e}")
+                logger.error(f"Error in ICAR main loop: {e}")
+                print(f"\nICAR Bot: I encountered an error: {e}")
                 print("Please try again or type 'quit' to exit.\n")
         
         return 0
