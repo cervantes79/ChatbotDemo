@@ -1,24 +1,45 @@
-# Agentic RAG Chatbot Demo
+# ICAR Chatbot Demo - Intelligent Concept-Aware RAG
 
-An intelligent chatbot that demonstrates agentic behavior by automatically deciding which tools to use based on user queries. It combines Retrieval-Augmented Generation (RAG) with external API calls and direct responses.
+An advanced intelligent chatbot implementing the **ICAR (Intelligent Concept-Aware RAG)** methodology. This system goes beyond traditional RAG by using concept extraction and intelligent matching to provide more accurate and contextually relevant responses.
 
-## Features
+**Author**: Barış Genç  
+**Methodology**: ICAR (Intelligent Concept-Aware RAG)
 
-- **Agentic Decision Making**: Automatically chooses the best approach for each query
-- **Knowledge Base Search**: RAG implementation using ChromaDB and OpenAI embeddings
-- **Weather Information**: Real-time weather data via OpenWeatherMap API
-- **Direct Conversations**: Handles greetings and general questions
-- **Transparent Reasoning**: Shows the decision-making process for each response
-- **Multiple Interfaces**: Both CLI and Streamlit web interface
-- **Dockerized**: Easy deployment with Docker and docker-compose
+## 🧠 ICAR Methodology
 
-## Architecture
+ICAR represents a significant advancement over traditional RAG systems:
 
-The chatbot uses three main action types:
+- **Concept Extraction**: Automatically identifies key concepts from both documents and user queries
+- **Intelligent Matching**: Uses multi-level concept matching (exact, semantic, categorical)
+- **Smart Retrieval**: Prioritizes documents based on concept relevance rather than just keyword similarity
+- **Enhanced Decision Making**: Makes intelligent choices about which retrieval strategy to use
+- **Transparent Reasoning**: Provides detailed explanations of the decision-making process
 
-1. **Direct Response**: For greetings and simple questions
-2. **Vector Search**: For knowledge base queries using RAG
-3. **Weather API**: For weather-related questions
+## ✨ Key Features
+
+- **🧠 Concept-Aware Intelligence**: ICAR methodology for superior understanding
+- **🎯 Smart Action Selection**: Four specialized action types with intelligent routing
+- **📊 Concept Indexing**: Advanced concept extraction and relationship mapping
+- **🔍 Multi-Level Retrieval**: Concept-based, semantic, and direct response strategies
+- **🌤️ Weather Integration**: Real-time weather data via OpenWeatherMap API
+- **💬 Natural Conversations**: Enhanced greeting and conversation handling
+- **📈 Performance Analytics**: Detailed statistics on concept extraction and matching
+- **🖥️ Multiple Interfaces**: Both CLI and modern Streamlit web interface
+- **🐳 Containerized**: Complete Docker support for easy deployment
+
+## 🏗️ ICAR Architecture
+
+The ICAR system uses four intelligent action types:
+
+1. **ICAR Direct Response**: For greetings and simple conversational queries
+2. **ICAR Concept-Based Retrieval**: Primary method using extracted concepts for precise matching
+3. **ICAR Semantic Search**: Fallback method using traditional vector similarity
+4. **ICAR Weather API**: Enhanced weather detection with concept awareness
+
+### Concept Extraction Pipeline:
+```
+Document → Concept Extraction → Concept Index → Query Analysis → Concept Matching → Smart Retrieval → Enhanced Response
+```
 
 ## Prerequisites
 
@@ -80,42 +101,49 @@ python main.py
 streamlit run streamlit_app.py
 ```
 
-## Usage Examples
+## 🚀 ICAR Usage Examples
 
-### CLI Interface
+### CLI Interface with ICAR Intelligence
 
 ```
 You: Hello!
-Bot: Hello! I'm your Agentic RAG Chatbot. How can I help you today?
+ICAR Bot: Hello! I'm your ICAR-powered chatbot using Intelligent Concept-Aware RAG methodology. How can I help you today?
 
-💭 Decision Process: This appears to be a simple greeting...
-🔧 Action Taken: Direct Response
+💭 ICAR Analysis: Simple greeting or basic query detected. No document retrieval needed.
+🔧 Action Taken: ICAR Direct Response
 
 You: What are the company work hours?
-Bot: According to the company handbook, the work hours are Monday to Friday, 9:00 AM to 5:00 PM...
+ICAR Bot: According to the company handbook, the work hours are Monday to Friday, 9:00 AM to 5:00 PM...
 
-💭 Decision Process: The query contains keywords that suggest...
-🔧 Action Taken: Knowledge Base Search
+💭 ICAR Analysis: Detected high-confidence domain concepts: ['business']. Using intelligent concept-based retrieval.
+🔧 Action Taken: ICAR Concept-Based Retrieval
 
 You: What's the weather in London?
-Bot: Weather in London, GB:
+ICAR Bot: Weather in London, GB:
 - Temperature: 15°C (feels like 13°C)
 - Condition: Light Rain
 - Humidity: 78%
 ...
 
-💭 Decision Process: User is asking about weather information for 'London'...
-🔧 Action Taken: Weather API Call
+💭 ICAR Analysis: Detected weather intent for 'London' with high concept confidence. Using weather API for real-time data.
+🔧 Action Taken: ICAR Weather API Call
+
+You: Tell me about product specifications
+ICAR Bot: Based on concept analysis, here are the product specifications from our catalog...
+
+💭 ICAR Analysis: Detected high-confidence domain concepts: ['product']. Using intelligent concept-based retrieval.
+🔧 Action Taken: ICAR Concept-Based Retrieval
 ```
 
-### Streamlit Interface
+### ICAR Streamlit Interface
 
-The web interface provides:
-- Real-time chat with message history
-- Decision process transparency
-- Example queries to try
-- System status information
-- Sample document generation
+The enhanced web interface provides:
+- Real-time chat with ICAR-powered responses
+- **Concept Analysis Transparency**: See which concepts were extracted and matched
+- **Decision Process Visualization**: Understand ICAR's reasoning
+- **Performance Metrics**: View concept extraction statistics
+- Example queries showcasing ICAR capabilities
+- System status with concept index information
 
 ## Project Structure
 
@@ -178,12 +206,21 @@ ChatbotDemo/
 - Extend external APIs in `src/external_apis.py`
 - Adjust chunk sizes and embedding parameters
 
-## Development
+## 🛠️ ICAR Development
 
-### Running Tests
+### Running ICAR Tests
 
 ```bash
-python -m pytest tests/
+# Run comprehensive ICAR test suite
+python test_icar.py
+
+# Run basic functionality tests
+python test_icar.py --basic
+
+# Run legacy tests (optional)
+python test_basic.py
+python test_structure.py
+python test_minimal.py
 ```
 
 ### Adding New Features
@@ -210,10 +247,27 @@ Place PDF files in the `data/` directory. They will be automatically processed a
 
 Check `chatbot.log` for detailed logging information.
 
-## License
+## 📊 ICAR Performance
 
-This project is for demonstration purposes. Refer to individual package licenses for dependencies.
+The ICAR system provides enhanced performance metrics:
+- **Concept Extraction Rate**: Number of concepts extracted per document
+- **Matching Accuracy**: Precision of concept-based retrieval
+- **Response Quality**: Improved relevance through intelligent matching
+- **Processing Speed**: Optimized for real-time concept analysis
 
-## Support
+## 📄 License
 
-For issues and questions, please check the logs and ensure all dependencies are properly installed.
+This ICAR implementation is for demonstration and research purposes. 
+**Author**: Barış Genç  
+**Methodology**: ICAR (Intelligent Concept-Aware RAG)
+
+Refer to individual package licenses for dependencies.
+
+## 🤝 Support
+
+**ICAR System**: Developed by Barış Genç  
+For technical questions about the ICAR methodology or implementation, please check the logs and ensure all ICAR dependencies are properly installed.
+
+---
+
+*Powered by ICAR (Intelligent Concept-Aware RAG) - A revolutionary approach to document retrieval and question answering by Barış Genç.*
