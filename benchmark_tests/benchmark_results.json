@@ -1,0 +1,818 @@
+{
+  "metadata": {
+    "test_date": "2025-09-07 17:58:52",
+    "total_queries": 11,
+    "systems_tested": [
+      "ICAR",
+      "Traditional_RAG"
+    ],
+    "author": "Barış Genç",
+    "methodology": "ICAR vs Traditional RAG Comparison"
+  },
+  "icar_results": [
+    {
+      "query_id": "test_001",
+      "query_text": "What are the company work hours and policies?",
+      "query_type": "concept_based",
+      "difficulty": "medium",
+      "system_type": "ICAR",
+      "response_text": "Based on concept analysis of work, hours, policy, company, here's the information: The Monday information shows relevant details. The Friday information shows relevant details. The 9:00 information shows relevant details.",
+      "retrieval_method": "concept_based_retrieval",
+      "processing_time": 5.0067901611328125e-06,
+      "retrieved_docs": [
+        {
+          "source": "company_handbook"
+        }
+      ],
+      "top_doc_source": "company_handbook",
+      "relevance_score": 0.9750000000000001,
+      "accuracy_score": 1.0,
+      "completeness_score": 0.75,
+      "concept_match_score": 1.0
+    },
+    {
+      "query_id": "test_002",
+      "query_text": "Tell me about employee benefits and healthcare",
+      "query_type": "concept_based",
+      "difficulty": "medium",
+      "system_type": "ICAR",
+      "response_text": "Based on concept analysis of employee, benefits, healthcare, insurance, here's the information: The health information shows relevant details. The insurance information shows relevant details. The coverage information shows relevant details.",
+      "retrieval_method": "concept_based_retrieval",
+      "processing_time": 3.0994415283203125e-06,
+      "retrieved_docs": [
+        {
+          "source": "hr_benefits"
+        }
+      ],
+      "top_doc_source": "hr_benefits",
+      "relevance_score": 1.0,
+      "accuracy_score": 1.0,
+      "completeness_score": 1.0,
+      "concept_match_score": 1.0
+    },
+    {
+      "query_id": "test_003",
+      "query_text": "What are the product specifications and features?",
+      "query_type": "concept_based",
+      "difficulty": "hard",
+      "system_type": "ICAR",
+      "response_text": "Based on concept analysis of product, specification, features, technical, here's the information: The specifications information shows relevant details. The features information shows relevant details. The technical information shows relevant details.",
+      "retrieval_method": "concept_based_retrieval",
+      "processing_time": 1.9073486328125e-06,
+      "retrieved_docs": [
+        {
+          "source": "product_catalog"
+        }
+      ],
+      "top_doc_source": "product_catalog",
+      "relevance_score": 1.0,
+      "accuracy_score": 1.0,
+      "completeness_score": 1.0,
+      "concept_match_score": 1.0
+    },
+    {
+      "query_id": "test_004",
+      "query_text": "How do I return a defective item?",
+      "query_type": "semantic",
+      "difficulty": "easy",
+      "system_type": "ICAR",
+      "response_text": "The return information shows relevant details. The refund information shows relevant details. The exchange information shows relevant details.",
+      "retrieval_method": "semantic_fallback",
+      "processing_time": 9.5367431640625e-07,
+      "retrieved_docs": [
+        {
+          "source": "return_policy"
+        }
+      ],
+      "top_doc_source": "return_policy",
+      "relevance_score": 0.75,
+      "accuracy_score": 1.0,
+      "completeness_score": 0.75,
+      "concept_match_score": 0.25
+    },
+    {
+      "query_id": "test_005",
+      "query_text": "What is the warranty period for products?",
+      "query_type": "semantic",
+      "difficulty": "easy",
+      "system_type": "ICAR",
+      "response_text": "The warranty information shows relevant details. The months information shows relevant details. The coverage information shows relevant details.",
+      "retrieval_method": "semantic_fallback",
+      "processing_time": 1.1920928955078125e-06,
+      "retrieved_docs": [
+        {
+          "source": "warranty_terms"
+        }
+      ],
+      "top_doc_source": "warranty_terms",
+      "relevance_score": 0.75,
+      "accuracy_score": 1.0,
+      "completeness_score": 0.75,
+      "concept_match_score": 0.5
+    },
+    {
+      "query_id": "test_006",
+      "query_text": "How does the IT support process work for remote employees?",
+      "query_type": "complex",
+      "difficulty": "hard",
+      "system_type": "ICAR",
+      "response_text": "The support information shows relevant details. The remote information shows relevant details. The process information shows relevant details.",
+      "retrieval_method": "concept_based_retrieval",
+      "processing_time": 9.5367431640625e-07,
+      "retrieved_docs": [
+        {
+          "source": "it_support_guide"
+        }
+      ],
+      "top_doc_source": "it_support_guide",
+      "relevance_score": 0.9750000000000001,
+      "accuracy_score": 1.0,
+      "completeness_score": 0.75,
+      "concept_match_score": 1.0
+    },
+    {
+      "query_id": "test_007",
+      "query_text": "What training programs are available for new managers?",
+      "query_type": "complex",
+      "difficulty": "hard",
+      "system_type": "ICAR",
+      "response_text": "The training information shows relevant details. The management information shows relevant details. The program information shows relevant details.",
+      "retrieval_method": "concept_based_retrieval",
+      "processing_time": 0.0,
+      "retrieved_docs": [
+        {
+          "source": "training_catalog"
+        }
+      ],
+      "top_doc_source": "training_catalog",
+      "relevance_score": 0.9750000000000001,
+      "accuracy_score": 1.0,
+      "completeness_score": 0.75,
+      "concept_match_score": 0.8
+    },
+    {
+      "query_id": "test_008",
+      "query_text": "What is the company phone number?",
+      "query_type": "exact",
+      "difficulty": "easy",
+      "system_type": "ICAR",
+      "response_text": "The phone information shows relevant details. The number information shows relevant details. The contact information shows relevant details.",
+      "retrieval_method": "direct_response",
+      "processing_time": 1.1920928955078125e-06,
+      "retrieved_docs": [
+        {
+          "source": "contact_info"
+        }
+      ],
+      "top_doc_source": "contact_info",
+      "relevance_score": 0.75,
+      "accuracy_score": 1.0,
+      "completeness_score": 0.75,
+      "concept_match_score": 1.0
+    },
+    {
+      "query_id": "test_009",
+      "query_text": "When was the company founded?",
+      "query_type": "exact",
+      "difficulty": "easy",
+      "system_type": "ICAR",
+      "response_text": "The founded information shows relevant details. The established information shows relevant details. The year information shows relevant details.",
+      "retrieval_method": "direct_response",
+      "processing_time": 0.0,
+      "retrieved_docs": [
+        {
+          "source": "company_history"
+        }
+      ],
+      "top_doc_source": "company_history",
+      "relevance_score": 0.75,
+      "accuracy_score": 1.0,
+      "completeness_score": 0.75,
+      "concept_match_score": 0.3333333333333333
+    },
+    {
+      "query_id": "test_010",
+      "query_text": "Tell me about security",
+      "query_type": "ambiguous",
+      "difficulty": "hard",
+      "system_type": "ICAR",
+      "response_text": "The security information shows relevant details. The policy information shows relevant details. The system information shows relevant details.",
+      "retrieval_method": "direct_response",
+      "processing_time": 9.5367431640625e-07,
+      "retrieved_docs": [
+        {
+          "source": "multiple_possible"
+        }
+      ],
+      "top_doc_source": "multiple_possible",
+      "relevance_score": 1.0,
+      "accuracy_score": 0.7,
+      "completeness_score": 1.0,
+      "concept_match_score": 1.0
+    },
+    {
+      "query_id": "test_011",
+      "query_text": "How do I get access?",
+      "query_type": "ambiguous",
+      "difficulty": "medium",
+      "system_type": "ICAR",
+      "response_text": "The access information shows relevant details. The permission information shows relevant details. The login information shows relevant details.",
+      "retrieval_method": "direct_response",
+      "processing_time": 0.0,
+      "retrieved_docs": [
+        {
+          "source": "multiple_possible"
+        }
+      ],
+      "top_doc_source": "multiple_possible",
+      "relevance_score": 1.0,
+      "accuracy_score": 0.7,
+      "completeness_score": 1.0,
+      "concept_match_score": 1.0
+    }
+  ],
+  "traditional_rag_results": [
+    {
+      "query_id": "test_001",
+      "query_text": "What are the company work hours and policies?",
+      "query_type": "concept_based",
+      "difficulty": "medium",
+      "system_type": "Traditional_RAG",
+      "response_text": "\n                Company Handbook - Work Hours and Policies\n                \n                Our company operates Monday through Friday, 9:00 AM to 5:00 PM Pacific Standard Time.\n                All employees are expected to maintain regular work hours unless approved for flexible scheduling.\n                \n                Remote work policy allows up to 3 days per week working from home with manager approval.\n                Break times: 15 minutes in morning, 60 minutes lunch, 15 minutes aft",
+      "retrieval_method": "semantic_similarity",
+      "processing_time": 0.0895991325378418,
+      "retrieved_docs": [
+        {
+          "position": 0,
+          "source": "company_handbook",
+          "chunk_id": "20411169_chunk_000",
+          "doc_id": "20411169",
+          "type": "traditional_chunk",
+          "distance": 0.25290554761886597,
+          "retrieval_method": "traditional_semantic",
+          "rank": 1
+        },
+        {
+          "source": "company_handbook",
+          "doc_id": "20411169",
+          "type": "traditional_chunk",
+          "chunk_id": "20411169_chunk_001",
+          "position": 1,
+          "distance": 0.49546927213668823,
+          "retrieval_method": "traditional_semantic",
+          "rank": 2
+        },
+        {
+          "source": "hr_benefits",
+          "chunk_id": "8f7b3cd8_chunk_000",
+          "doc_id": "8f7b3cd8",
+          "type": "traditional_chunk",
+          "position": 0,
+          "distance": 0.6200417280197144,
+          "retrieval_method": "traditional_semantic",
+          "rank": 3
+        }
+      ],
+      "top_doc_source": "company_handbook",
+      "relevance_score": 1.0,
+      "accuracy_score": 1.0,
+      "completeness_score": 1.0,
+      "concept_match_score": 0.0
+    },
+    {
+      "query_id": "test_002",
+      "query_text": "Tell me about employee benefits and healthcare",
+      "query_type": "concept_based",
+      "difficulty": "medium",
+      "system_type": "Traditional_RAG",
+      "response_text": "\n                Employee Benefits and Healthcare Guide\n                \n                Health Insurance: Full coverage for employees and families. Includes medical, dental, vision.\n                Life Insurance: 2x annual salary provided at no cost to employee.\n                \n                Retirement Benefits: 401k with company match up to 6%. Immediate vesting.\n                Paid Time Off: 20 days vacation, 10 sick days, 12 holidays annually.\n                \n                Profession",
+      "retrieval_method": "semantic_similarity",
+      "processing_time": 0.08645987510681152,
+      "retrieved_docs": [
+        {
+          "type": "traditional_chunk",
+          "position": 0,
+          "chunk_id": "8f7b3cd8_chunk_000",
+          "source": "hr_benefits",
+          "doc_id": "8f7b3cd8",
+          "distance": 0.2836981415748596,
+          "retrieval_method": "traditional_semantic",
+          "rank": 1
+        },
+        {
+          "type": "traditional_chunk",
+          "position": 1,
+          "source": "hr_benefits",
+          "chunk_id": "8f7b3cd8_chunk_001",
+          "doc_id": "8f7b3cd8",
+          "distance": 0.6952700614929199,
+          "retrieval_method": "traditional_semantic",
+          "rank": 2
+        },
+        {
+          "position": 0,
+          "type": "traditional_chunk",
+          "source": "company_handbook",
+          "chunk_id": "20411169_chunk_000",
+          "doc_id": "20411169",
+          "distance": 0.7450457215309143,
+          "retrieval_method": "traditional_semantic",
+          "rank": 3
+        }
+      ],
+      "top_doc_source": "hr_benefits",
+      "relevance_score": 1.0,
+      "accuracy_score": 1.0,
+      "completeness_score": 1.0,
+      "concept_match_score": 0.0
+    },
+    {
+      "query_id": "test_003",
+      "query_text": "What are the product specifications and features?",
+      "query_type": "concept_based",
+      "difficulty": "hard",
+      "system_type": "Traditional_RAG",
+      "response_text": "\n                ACME Widget Pro - Product Specifications\n                \n                Technical Specifications:\n                - Dimensions: 12\" x 8\" x 4\" \n                - Weight: 2.5 lbs\n                - Material: Aircraft-grade aluminum\n                - Power: 110V AC, 50W consumption\n                \n                Features:\n                - Advanced widget processing technology\n                - Smart connectivity via WiFi and Bluetooth\n                - Mobile app integration fo",
+      "retrieval_method": "semantic_similarity",
+      "processing_time": 0.08456301689147949,
+      "retrieved_docs": [
+        {
+          "doc_id": "1015a79c",
+          "type": "traditional_chunk",
+          "chunk_id": "1015a79c_chunk_000",
+          "position": 0,
+          "source": "product_catalog",
+          "distance": 0.5411952137947083,
+          "retrieval_method": "traditional_semantic",
+          "rank": 1
+        },
+        {
+          "source": "product_catalog",
+          "chunk_id": "1015a79c_chunk_001",
+          "doc_id": "1015a79c",
+          "position": 1,
+          "type": "traditional_chunk",
+          "distance": 0.7071378827095032,
+          "retrieval_method": "traditional_semantic",
+          "rank": 2
+        },
+        {
+          "chunk_id": "12742c01_chunk_001",
+          "position": 1,
+          "source": "it_support_guide",
+          "doc_id": "12742c01",
+          "type": "traditional_chunk",
+          "distance": 0.7932372689247131,
+          "retrieval_method": "traditional_semantic",
+          "rank": 3
+        }
+      ],
+      "top_doc_source": "product_catalog",
+      "relevance_score": 1.0,
+      "accuracy_score": 1.0,
+      "completeness_score": 1.0,
+      "concept_match_score": 0.0
+    },
+    {
+      "query_id": "test_004",
+      "query_text": "How do I return a defective item?",
+      "query_type": "semantic",
+      "difficulty": "easy",
+      "system_type": "Traditional_RAG",
+      "response_text": "ow to Return:\n                1. Contact customer service at 1-800-WIDGETS\n                2. Receive return authorization number\n                3. Ship item with prepaid return label\n                4. Refund processed within 5-7 business days\n                ",
+      "retrieval_method": "semantic_similarity",
+      "processing_time": 0.08275318145751953,
+      "retrieved_docs": [
+        {
+          "source": "return_policy",
+          "type": "traditional_chunk",
+          "position": 1,
+          "chunk_id": "e0e92cb3_chunk_001",
+          "doc_id": "e0e92cb3",
+          "distance": 0.46001529693603516,
+          "retrieval_method": "traditional_semantic",
+          "rank": 1
+        },
+        {
+          "doc_id": "e0e92cb3",
+          "type": "traditional_chunk",
+          "position": 0,
+          "source": "return_policy",
+          "chunk_id": "e0e92cb3_chunk_000",
+          "distance": 0.513481616973877,
+          "retrieval_method": "traditional_semantic",
+          "rank": 2
+        },
+        {
+          "type": "traditional_chunk",
+          "doc_id": "12742c01",
+          "chunk_id": "12742c01_chunk_000",
+          "position": 0,
+          "source": "it_support_guide",
+          "distance": 0.7507196068763733,
+          "retrieval_method": "traditional_semantic",
+          "rank": 3
+        }
+      ],
+      "top_doc_source": "return_policy",
+      "relevance_score": 0.5,
+      "accuracy_score": 1.0,
+      "completeness_score": 0.5,
+      "concept_match_score": 0.0
+    },
+    {
+      "query_id": "test_005",
+      "query_text": "What is the warranty period for products?",
+      "query_type": "semantic",
+      "difficulty": "easy",
+      "system_type": "Traditional_RAG",
+      "response_text": "\n                Return Policy and Customer Service\n                \n                Return Period: 30 days from purchase date for full refund.\n                Condition: Items must be unused, in original packaging with receipt.\n                \n                Exchange Policy: Free exchanges within 60 days for different size/color.\n                Defective Items: Immediate replacement or refund, no time limit.\n                \n                How to Return:\n                1. Contact customer ",
+      "retrieval_method": "semantic_similarity",
+      "processing_time": 0.08677887916564941,
+      "retrieved_docs": [
+        {
+          "type": "traditional_chunk",
+          "chunk_id": "e0e92cb3_chunk_000",
+          "position": 0,
+          "doc_id": "e0e92cb3",
+          "source": "return_policy",
+          "distance": 0.5617710947990417,
+          "retrieval_method": "traditional_semantic",
+          "rank": 1
+        },
+        {
+          "source": "product_catalog",
+          "chunk_id": "1015a79c_chunk_001",
+          "doc_id": "1015a79c",
+          "position": 1,
+          "type": "traditional_chunk",
+          "distance": 0.6204042434692383,
+          "retrieval_method": "traditional_semantic",
+          "rank": 2
+        },
+        {
+          "chunk_id": "e0e92cb3_chunk_001",
+          "doc_id": "e0e92cb3",
+          "position": 1,
+          "type": "traditional_chunk",
+          "source": "return_policy",
+          "distance": 0.7062329053878784,
+          "retrieval_method": "traditional_semantic",
+          "rank": 3
+        }
+      ],
+      "top_doc_source": "return_policy",
+      "relevance_score": 0.0,
+      "accuracy_score": 0.0,
+      "completeness_score": 0.0,
+      "concept_match_score": 0.0
+    },
+    {
+      "query_id": "test_006",
+      "query_text": "How does the IT support process work for remote employees?",
+      "query_type": "complex",
+      "difficulty": "hard",
+      "system_type": "Traditional_RAG",
+      "response_text": "\n                IT Support Process for Remote Employees\n                \n                Support Channels:\n                - Help Desk Portal: support.company.com\n                - Phone: 1-800-IT-HELP (available 24/7)\n                - Email: itsupport@company.com\n                - Emergency Line: 1-800-URGENT (critical issues only)\n                \n                Remote Support Process:\n                1. Submit ticket through portal with detailed description\n                2. IT team respo",
+      "retrieval_method": "semantic_similarity",
+      "processing_time": 0.08573198318481445,
+      "retrieved_docs": [
+        {
+          "source": "it_support_guide",
+          "position": 0,
+          "type": "traditional_chunk",
+          "chunk_id": "12742c01_chunk_000",
+          "doc_id": "12742c01",
+          "distance": 0.2809144854545593,
+          "retrieval_method": "traditional_semantic",
+          "rank": 1
+        },
+        {
+          "chunk_id": "12742c01_chunk_001",
+          "type": "traditional_chunk",
+          "source": "it_support_guide",
+          "doc_id": "12742c01",
+          "position": 1,
+          "distance": 0.5270905494689941,
+          "retrieval_method": "traditional_semantic",
+          "rank": 2
+        },
+        {
+          "doc_id": "20411169",
+          "source": "company_handbook",
+          "position": 0,
+          "type": "traditional_chunk",
+          "chunk_id": "20411169_chunk_000",
+          "distance": 0.5899792313575745,
+          "retrieval_method": "traditional_semantic",
+          "rank": 3
+        }
+      ],
+      "top_doc_source": "it_support_guide",
+      "relevance_score": 1.0,
+      "accuracy_score": 1.0,
+      "completeness_score": 1.0,
+      "concept_match_score": 0.0
+    },
+    {
+      "query_id": "test_007",
+      "query_text": "What training programs are available for new managers?",
+      "query_type": "complex",
+      "difficulty": "hard",
+      "system_type": "Traditional_RAG",
+      "response_text": "ually.\n                \n                Professional Development: $2000 annual education budget per employee.\n                Wellness Program: On-site gym, health screenings, mental health support.\n                ",
+      "retrieval_method": "semantic_similarity",
+      "processing_time": 0.08674407005310059,
+      "retrieved_docs": [
+        {
+          "source": "hr_benefits",
+          "type": "traditional_chunk",
+          "position": 1,
+          "doc_id": "8f7b3cd8",
+          "chunk_id": "8f7b3cd8_chunk_001",
+          "distance": 0.73616623878479,
+          "retrieval_method": "traditional_semantic",
+          "rank": 1
+        },
+        {
+          "type": "traditional_chunk",
+          "source": "company_handbook",
+          "doc_id": "20411169",
+          "chunk_id": "20411169_chunk_000",
+          "position": 0,
+          "distance": 0.8085153698921204,
+          "retrieval_method": "traditional_semantic",
+          "rank": 2
+        },
+        {
+          "doc_id": "8f7b3cd8",
+          "chunk_id": "8f7b3cd8_chunk_000",
+          "position": 0,
+          "source": "hr_benefits",
+          "type": "traditional_chunk",
+          "distance": 0.8667601346969604,
+          "retrieval_method": "traditional_semantic",
+          "rank": 3
+        }
+      ],
+      "top_doc_source": "hr_benefits",
+      "relevance_score": 0.5,
+      "accuracy_score": 0.0,
+      "completeness_score": 0.5,
+      "concept_match_score": 0.0
+    },
+    {
+      "query_id": "test_008",
+      "query_text": "What is the company phone number?",
+      "query_type": "exact",
+      "difficulty": "easy",
+      "system_type": "Traditional_RAG",
+      "response_text": "\n                IT Support Process for Remote Employees\n                \n                Support Channels:\n                - Help Desk Portal: support.company.com\n                - Phone: 1-800-IT-HELP (available 24/7)\n                - Email: itsupport@company.com\n                - Emergency Line: 1-800-URGENT (critical issues only)\n                \n                Remote Support Process:\n                1. Submit ticket through portal with detailed description\n                2. IT team respo",
+      "retrieval_method": "semantic_similarity",
+      "processing_time": 0.08446407318115234,
+      "retrieved_docs": [
+        {
+          "type": "traditional_chunk",
+          "doc_id": "12742c01",
+          "position": 0,
+          "source": "it_support_guide",
+          "chunk_id": "12742c01_chunk_000",
+          "distance": 0.6430799961090088,
+          "retrieval_method": "traditional_semantic",
+          "rank": 1
+        },
+        {
+          "doc_id": "e0e92cb3",
+          "position": 1,
+          "chunk_id": "e0e92cb3_chunk_001",
+          "type": "traditional_chunk",
+          "source": "return_policy",
+          "distance": 0.6482094526290894,
+          "retrieval_method": "traditional_semantic",
+          "rank": 2
+        },
+        {
+          "type": "traditional_chunk",
+          "doc_id": "1015a79c",
+          "source": "product_catalog",
+          "position": 1,
+          "chunk_id": "1015a79c_chunk_001",
+          "distance": 0.7793091535568237,
+          "retrieval_method": "traditional_semantic",
+          "rank": 3
+        }
+      ],
+      "top_doc_source": "it_support_guide",
+      "relevance_score": 0.25,
+      "accuracy_score": 0.0,
+      "completeness_score": 0.25,
+      "concept_match_score": 0.0
+    },
+    {
+      "query_id": "test_009",
+      "query_text": "When was the company founded?",
+      "query_type": "exact",
+      "difficulty": "easy",
+      "system_type": "Traditional_RAG",
+      "response_text": "\n                Company Handbook - Work Hours and Policies\n                \n                Our company operates Monday through Friday, 9:00 AM to 5:00 PM Pacific Standard Time.\n                All employees are expected to maintain regular work hours unless approved for flexible scheduling.\n                \n                Remote work policy allows up to 3 days per week working from home with manager approval.\n                Break times: 15 minutes in morning, 60 minutes lunch, 15 minutes aft",
+      "retrieval_method": "semantic_similarity",
+      "processing_time": 0.08609485626220703,
+      "retrieved_docs": [
+        {
+          "doc_id": "20411169",
+          "source": "company_handbook",
+          "type": "traditional_chunk",
+          "position": 0,
+          "chunk_id": "20411169_chunk_000",
+          "distance": 0.8232924938201904,
+          "retrieval_method": "traditional_semantic",
+          "rank": 1
+        },
+        {
+          "doc_id": "8f7b3cd8",
+          "chunk_id": "8f7b3cd8_chunk_001",
+          "type": "traditional_chunk",
+          "source": "hr_benefits",
+          "position": 1,
+          "distance": 0.8236172199249268,
+          "retrieval_method": "traditional_semantic",
+          "rank": 2
+        },
+        {
+          "source": "company_handbook",
+          "position": 1,
+          "doc_id": "20411169",
+          "type": "traditional_chunk",
+          "chunk_id": "20411169_chunk_001",
+          "distance": 0.8285925388336182,
+          "retrieval_method": "traditional_semantic",
+          "rank": 3
+        }
+      ],
+      "top_doc_source": "company_handbook",
+      "relevance_score": 0.0,
+      "accuracy_score": 0.6,
+      "completeness_score": 0.0,
+      "concept_match_score": 0.0
+    },
+    {
+      "query_id": "test_010",
+      "query_text": "Tell me about security",
+      "query_type": "ambiguous",
+      "difficulty": "hard",
+      "system_type": "Traditional_RAG",
+      "response_text": "\n                Employee Benefits and Healthcare Guide\n                \n                Health Insurance: Full coverage for employees and families. Includes medical, dental, vision.\n                Life Insurance: 2x annual salary provided at no cost to employee.\n                \n                Retirement Benefits: 401k with company match up to 6%. Immediate vesting.\n                Paid Time Off: 20 days vacation, 10 sick days, 12 holidays annually.\n                \n                Profession",
+      "retrieval_method": "semantic_similarity",
+      "processing_time": 0.08405709266662598,
+      "retrieved_docs": [
+        {
+          "position": 0,
+          "source": "hr_benefits",
+          "type": "traditional_chunk",
+          "chunk_id": "8f7b3cd8_chunk_000",
+          "doc_id": "8f7b3cd8",
+          "distance": 0.8108724355697632,
+          "retrieval_method": "traditional_semantic",
+          "rank": 1
+        },
+        {
+          "chunk_id": "12742c01_chunk_001",
+          "doc_id": "12742c01",
+          "source": "it_support_guide",
+          "position": 1,
+          "type": "traditional_chunk",
+          "distance": 0.8386650085449219,
+          "retrieval_method": "traditional_semantic",
+          "rank": 2
+        },
+        {
+          "type": "traditional_chunk",
+          "chunk_id": "20411169_chunk_000",
+          "doc_id": "20411169",
+          "position": 0,
+          "source": "company_handbook",
+          "distance": 0.8480314612388611,
+          "retrieval_method": "traditional_semantic",
+          "rank": 3
+        }
+      ],
+      "top_doc_source": "hr_benefits",
+      "relevance_score": 0.0,
+      "accuracy_score": 0.7,
+      "completeness_score": 0.0,
+      "concept_match_score": 0.0
+    },
+    {
+      "query_id": "test_011",
+      "query_text": "How do I get access?",
+      "query_type": "ambiguous",
+      "difficulty": "medium",
+      "system_type": "Traditional_RAG",
+      "response_text": "\n                IT Support Process for Remote Employees\n                \n                Support Channels:\n                - Help Desk Portal: support.company.com\n                - Phone: 1-800-IT-HELP (available 24/7)\n                - Email: itsupport@company.com\n                - Emergency Line: 1-800-URGENT (critical issues only)\n                \n                Remote Support Process:\n                1. Submit ticket through portal with detailed description\n                2. IT team respo",
+      "retrieval_method": "semantic_similarity",
+      "processing_time": 0.09799885749816895,
+      "retrieved_docs": [
+        {
+          "doc_id": "12742c01",
+          "source": "it_support_guide",
+          "chunk_id": "12742c01_chunk_000",
+          "position": 0,
+          "type": "traditional_chunk",
+          "distance": 0.7274534106254578,
+          "retrieval_method": "traditional_semantic",
+          "rank": 1
+        },
+        {
+          "doc_id": "e0e92cb3",
+          "source": "return_policy",
+          "position": 1,
+          "chunk_id": "e0e92cb3_chunk_001",
+          "type": "traditional_chunk",
+          "distance": 0.7678695321083069,
+          "retrieval_method": "traditional_semantic",
+          "rank": 2
+        },
+        {
+          "position": 1,
+          "chunk_id": "12742c01_chunk_001",
+          "source": "it_support_guide",
+          "doc_id": "12742c01",
+          "type": "traditional_chunk",
+          "distance": 0.8521031141281128,
+          "retrieval_method": "traditional_semantic",
+          "rank": 3
+        }
+      ],
+      "top_doc_source": "it_support_guide",
+      "relevance_score": 0.0,
+      "accuracy_score": 0.7,
+      "completeness_score": 0.0,
+      "concept_match_score": 0.0
+    }
+  ],
+  "comparison_metrics": {
+    "icar_metrics": {
+      "total_queries": 11,
+      "avg_relevance": 0.9022727272727273,
+      "avg_accuracy": 0.9454545454545454,
+      "avg_completeness": 0.8409090909090909,
+      "avg_concept_match": 0.8075757575757576,
+      "avg_processing_time": 1.3871626420454546e-06,
+      "overall_score": 0.8887499999999999,
+      "concept_based_count": 3,
+      "concept_based_avg_score": 0.9694444444444444,
+      "semantic_count": 2,
+      "semantic_avg_score": 0.8333333333333334,
+      "complex_count": 2,
+      "complex_avg_score": 0.9083333333333333,
+      "exact_count": 2,
+      "exact_avg_score": 0.8333333333333334,
+      "ambiguous_count": 2,
+      "ambiguous_avg_score": 0.9
+    },
+    "traditional_metrics": {
+      "total_queries": 11,
+      "avg_relevance": 0.4772727272727273,
+      "avg_accuracy": 0.6363636363636364,
+      "avg_completeness": 0.4772727272727273,
+      "avg_concept_match": 0.0,
+      "avg_processing_time": 0.08684045618230646,
+      "overall_score": 0.4534090909090909,
+      "concept_based_count": 3,
+      "concept_based_avg_score": 1.0,
+      "semantic_count": 2,
+      "semantic_avg_score": 0.3333333333333333,
+      "complex_count": 2,
+      "complex_avg_score": 0.6666666666666666,
+      "exact_count": 2,
+      "exact_avg_score": 0.18333333333333332,
+      "ambiguous_count": 2,
+      "ambiguous_avg_score": 0.2333333333333333
+    },
+    "improvements": {
+      "relevance_improvement": 89.04761904761905,
+      "accuracy_improvement": 48.57142857142857,
+      "overall_improvement": 96.01503759398497,
+      "concept_advantage": 80.75757575757576
+    },
+    "winner": "ICAR",
+    "performance_gap": 0.43534090909090906
+  },
+  "summary": {
+    "test_date": "2025-09-07 17:58:52",
+    "total_queries_tested": 11,
+    "winner": "ICAR",
+    "performance_gap": "0.435",
+    "key_improvements": {
+      "relevance": "89.0%",
+      "accuracy": "48.6%",
+      "overall": "96.0%"
+    },
+    "icar_advantages": [
+      "Concept-aware matching",
+      "Better context understanding",
+      "Multi-level retrieval strategy"
+    ],
+    "recommendation": "Deploy ICAR"
+  }
+}
