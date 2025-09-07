@@ -1,0 +1,34 @@
+{
+  "documents": {
+    "edu_cs_syllabus": {
+      "text": "\n    Course Syllabus - Introduction to Computer Science\n    \n    Course Overview:\n    This course introduces students to fundamental concepts in computer science including programming, \n    data structures, algorithms, and software development. Students will learn Python programming\n    language and develop problem-solving skills.\n    \n    Learning Objectives:\n    - Understand basic programming concepts\n    - Implement data structures like lists, stacks, and queues\n    - Analyze algorithm efficiency and complexity\n    - Develop debugging and testing skills\n    \n    Grading Policy:\n    Assignments: 40%\n    Midterm Exam: 25%\n    Final Project: 25%\n    Class Participation: 10%\n    \n    Schedule:\n    Week 1-3: Python Basics\n    Week 4-6: Data Structures\n    Week 7-9: Algorithms\n    Week 10-12: Software Development\n    Week 13-15: Final Project\n    \n    Prerequisites:\n    Basic mathematics knowledge required. No prior programming experience necessary.\n    ",
+      "source": "education/computer_science_101.txt",
+      "metadata": {
+        "domain": "education",
+        "subject": "computer_science",
+        "type": "syllabus"
+      }
+    }
+  },
+  "chunks": {
+    "ebc36d51dccc": {
+      "chunk_id": "ebc36d51dccc",
+      "chunk_type": "hybrid",
+      "content": "Course Syllabus - Introduction to Computer Science\n    \n    Course Overview:\n    This course introduces students to fundamental concepts in computer science including programming, \n    data structures... | Keywords: week programming course data data structures structures",
+      "original_text": "Course Syllabus - Introduction to Computer Science\n    \n    Course Overview:\n    This course introduces students to fundamental concepts in computer science including programming, \n    data structures, algorithms, and software development. Students will learn Python programming\n    language and develop problem-solving skills.\n    \n    Learning Objectives:\n    - Understand basic programming concepts\n    - Implement data structures like lists, stacks, and queues\n    - Analyze algorithm efficiency and complexity\n    - Develop debugging and testing skills\n    \n    Grading Policy:\n    Assignments: 40%\n    Midterm Exam: 25%\n    Final Project: 25%\n    Class Participation: 10%\n    \n    Schedule:\n    Week 1-3: Python Basics\n    Week 4-6: Data Structures\n    Week 7-9: Algorithms\n    Week 10-12: Software Development\n    Week 13-15: Final Project\n    \n    Prerequisites:\n    Basic mathematics knowledge required. No prior programming experience necessary.",
+      "doc_id": "edu_cs_syllabus",
+      "section": null,
+      "position": 0,
+      "confidence": 1.0,
+      "keywords": [
+        "week",
+        "programming",
+        "course",
+        "data",
+        "data structures",
+        "structures"
+      ],
+      "summary": "Course Syllabus - Introduction to Computer Science\n    \n    Course Overview:\n    This course introduces students to fundamental concepts in computer science including programming, \n    data structures..."
+    }
+  }
+}
