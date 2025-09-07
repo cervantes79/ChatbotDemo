@@ -8,7 +8,7 @@ from src.agent_core import ICARChatbot
 # Page configuration
 st.set_page_config(
     page_title="ICAR Chatbot Demo - Intelligent Concept-Aware RAG",
-    page_icon="🧠",
+    page_icon="⚡",
     layout="wide",
     initial_sidebar_state="expanded"
 )
@@ -67,47 +67,47 @@ def create_sample_data():
 
 def main():
     # Title and header
-    st.title("🧠 ICAR Chatbot Demo - Intelligent Concept-Aware RAG")
+    st.title("ICAR Chatbot Demo - Intelligent Concept-Aware RAG")
     st.markdown("**Author:** Barış Genç | **Methodology:** ICAR")
     st.markdown("---")
     
     # Sidebar
     with st.sidebar:
-        st.header("🧠 ICAR System Information")
+        st.header("ICAR System Information")
         
         # Initialize chatbot
         chatbot = initialize_chatbot()
         
         if chatbot:
             stats = chatbot.get_stats()
-            st.success("✅ ICAR Chatbot Initialized")
-            st.info(f"🧠 System: {stats.get('icar_system', 'ICAR')}")
-            st.info(f"👨‍💻 Methodology: {stats.get('methodology', 'By Barış Genç')}")
-            st.info(f"📄 Documents: {stats.get('documents_count', 0)}")
-            st.info(f"🎯 Concepts Extracted: {stats.get('concepts_extracted', 0)}")
-            st.info(f"📊 Concept Index: {stats.get('concept_index_size', 0)}")
-            st.info(f"🗄️ Vector Store: {'✅' if stats.get('vector_store_ready', False) else '❌'}")
-            st.info(f"🌤️ Weather API: {'✅' if stats.get('weather_api_ready', False) else '❌'}")
+            st.success("ICAR Chatbot Initialized")
+            st.info(f"System: {stats.get('icar_system', 'ICAR')}")
+            st.info(f"Methodology: {stats.get('methodology', 'By Barış Genç')}")
+            st.info(f"Documents: {stats.get('documents_count', 0)}")
+            st.info(f"Concepts Extracted: {stats.get('concepts_extracted', 0)}")
+            st.info(f"Concept Index: {stats.get('concept_index_size', 0)}")
+            st.info(f"Vector Store: {'Ready' if stats.get('vector_store_ready', False) else 'Not Ready'}")
+            st.info(f"Weather API: {'Ready' if stats.get('weather_api_ready', False) else 'Not Ready'}")
         else:
-            st.error("❌ ICAR Chatbot Not Initialized")
+            st.error("ICAR Chatbot Not Initialized")
             st.stop()
         
         st.markdown("---")
         st.header("ICAR Capabilities")
         st.markdown("""
         This advanced ICAR system can:
-        - 🎯 **Concept-Aware Intelligence**: Understand your intent through concept extraction
-        - 📚 **Intelligent Retrieval**: Answer questions using concept-based matching
-        - 🌤️ **Weather Information**: Get current weather for any city
-        - 💬 **Natural Conversation**: Respond to greetings and basic questions
-        - 🧠 **Transparent Reasoning**: Show detailed decision-making process
+        - **Concept-Aware Intelligence**: Understand your intent through concept extraction
+        - **Intelligent Retrieval**: Answer questions using concept-based matching
+        - **Weather Information**: Get current weather for any city
+        - **Natural Conversation**: Respond to greetings and basic questions
+        - **Transparent Reasoning**: Show detailed decision-making process
         
         The ICAR system explains its concept analysis for each response.
         """)
         
         # Sample data creation
         st.markdown("---")
-        if st.button("🔄 Create Sample Documents"):
+        if st.button("Create Sample Documents"):
             create_sample_data()
     
     # Main chat interface
@@ -131,7 +131,7 @@ def main():
                     with st.chat_message("assistant"):
                         st.write(message["content"])
                         if "reasoning" in message and "action" in message:
-                            with st.expander("🧠 ICAR Analysis"):
+                            with st.expander("ICAR Analysis"):
                                 st.write(f"**ICAR Reasoning:** {message['reasoning']}")
                                 st.write(f"**Action Taken:** {message['action']}")
         
@@ -172,7 +172,7 @@ def main():
         
         st.markdown("Try these example queries:")
         for query in example_queries:
-            if st.button(f"💬 {query}", key=f"example_{query[:20]}"):
+            if st.button(f"{query}", key=f"example_{query[:20]}"):
                 st.session_state.messages.append({"role": "user", "content": query})
                 
                 with st.spinner("Processing..."):
@@ -188,7 +188,7 @@ def main():
                 st.rerun()
         
         # Clear chat button
-        if st.button("🗑️ Clear Chat"):
+        if st.button("Clear Chat"):
             st.session_state.messages = []
             st.rerun()
         

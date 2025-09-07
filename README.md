@@ -5,7 +5,7 @@ An advanced intelligent chatbot implementing the **ICAR (Intelligent Concept-Awa
 **Author**: Barış Genç  
 **Methodology**: ICAR (Intelligent Concept-Aware RAG)
 
-## 🧠 ICAR Methodology
+## ICAR Methodology
 
 ICAR represents a significant advancement over traditional RAG systems:
 
@@ -15,19 +15,19 @@ ICAR represents a significant advancement over traditional RAG systems:
 - **Enhanced Decision Making**: Makes intelligent choices about which retrieval strategy to use
 - **Transparent Reasoning**: Provides detailed explanations of the decision-making process
 
-## ✨ Key Features
+## Key Features
 
-- **🧠 Concept-Aware Intelligence**: ICAR methodology for superior understanding
-- **🎯 Smart Action Selection**: Four specialized action types with intelligent routing
-- **📊 Concept Indexing**: Advanced concept extraction and relationship mapping
-- **🔍 Multi-Level Retrieval**: Concept-based, semantic, and direct response strategies
-- **🌤️ Weather Integration**: Real-time weather data via OpenWeatherMap API
-- **💬 Natural Conversations**: Enhanced greeting and conversation handling
-- **📈 Performance Analytics**: Detailed statistics on concept extraction and matching
-- **🖥️ Multiple Interfaces**: Both CLI and modern Streamlit web interface
-- **🐳 Containerized**: Complete Docker support for easy deployment
+- **Concept-Aware Intelligence**: ICAR methodology for superior understanding
+- **Smart Action Selection**: Four specialized action types with intelligent routing
+- **Concept Indexing**: Advanced concept extraction and relationship mapping
+- **Multi-Level Retrieval**: Concept-based, semantic, and direct response strategies
+- **Weather Integration**: Real-time weather data via OpenWeatherMap API
+- **Natural Conversations**: Enhanced greeting and conversation handling
+- **Performance Analytics**: Detailed statistics on concept extraction and matching
+- **Multiple Interfaces**: Both CLI and modern Streamlit web interface
+- **Containerized**: Complete Docker support for easy deployment
 
-## 🏗️ ICAR Architecture
+## ICAR Architecture
 
 The ICAR system uses four intelligent action types:
 
@@ -101,7 +101,7 @@ python main.py
 streamlit run streamlit_app.py
 ```
 
-## 🚀 ICAR Usage Examples
+## ICAR Usage Examples
 
 ### CLI Interface with ICAR Intelligence
 
@@ -109,14 +109,14 @@ streamlit run streamlit_app.py
 You: Hello!
 ICAR Bot: Hello! I'm your ICAR-powered chatbot using Intelligent Concept-Aware RAG methodology. How can I help you today?
 
-💭 ICAR Analysis: Simple greeting or basic query detected. No document retrieval needed.
-🔧 Action Taken: ICAR Direct Response
+ICAR Analysis: Simple greeting or basic query detected. No document retrieval needed.
+Action Taken: ICAR Direct Response
 
 You: What are the company work hours?
 ICAR Bot: According to the company handbook, the work hours are Monday to Friday, 9:00 AM to 5:00 PM...
 
-💭 ICAR Analysis: Detected high-confidence domain concepts: ['business']. Using intelligent concept-based retrieval.
-🔧 Action Taken: ICAR Concept-Based Retrieval
+ICAR Analysis: Detected high-confidence domain concepts: ['business']. Using intelligent concept-based retrieval.
+Action Taken: ICAR Concept-Based Retrieval
 
 You: What's the weather in London?
 ICAR Bot: Weather in London, GB:
@@ -125,23 +125,23 @@ ICAR Bot: Weather in London, GB:
 - Humidity: 78%
 ...
 
-💭 ICAR Analysis: Detected weather intent for 'London' with high concept confidence. Using weather API for real-time data.
-🔧 Action Taken: ICAR Weather API Call
+ICAR Analysis: Detected weather intent for 'London' with high concept confidence. Using weather API for real-time data.
+Action Taken: ICAR Weather API Call
 
 You: Tell me about product specifications
 ICAR Bot: Based on concept analysis, here are the product specifications from our catalog...
 
-💭 ICAR Analysis: Detected high-confidence domain concepts: ['product']. Using intelligent concept-based retrieval.
-🔧 Action Taken: ICAR Concept-Based Retrieval
+ICAR Analysis: Detected high-confidence domain concepts: ['product']. Using intelligent concept-based retrieval.
+Action Taken: ICAR Concept-Based Retrieval
 ```
 
 ### ICAR Streamlit Interface
 
 The enhanced web interface provides:
 - Real-time chat with ICAR-powered responses
-- **Concept Analysis Transparency**: See which concepts were extracted and matched
-- **Decision Process Visualization**: Understand ICAR's reasoning
-- **Performance Metrics**: View concept extraction statistics
+- Concept Analysis Transparency: See which concepts were extracted and matched
+- Decision Process Visualization: Understand ICAR's reasoning
+- Performance Metrics: View concept extraction statistics
 - Example queries showcasing ICAR capabilities
 - System status with concept index information
 
@@ -206,7 +206,7 @@ ChatbotDemo/
 - Extend external APIs in `src/external_apis.py`
 - Adjust chunk sizes and embedding parameters
 
-## 🛠️ ICAR Development
+## ICAR Development
 
 ### Running ICAR Tests
 
@@ -247,7 +247,7 @@ Place PDF files in the `data/` directory. They will be automatically processed a
 
 Check `chatbot.log` for detailed logging information.
 
-## 📊 ICAR Performance
+## ICAR Performance
 
 The ICAR system provides enhanced performance metrics:
 - **Concept Extraction Rate**: Number of concepts extracted per document
@@ -255,7 +255,7 @@ The ICAR system provides enhanced performance metrics:
 - **Response Quality**: Improved relevance through intelligent matching
 - **Processing Speed**: Optimized for real-time concept analysis
 
-## 📄 License
+## License
 
 This ICAR implementation is for demonstration and research purposes. 
 **Author**: Barış Genç  
@@ -263,7 +263,7 @@ This ICAR implementation is for demonstration and research purposes.
 
 Refer to individual package licenses for dependencies.
 
-## 🤝 Support
+## Support
 
 **ICAR System**: Developed by Barış Genç  
 For technical questions about the ICAR methodology or implementation, please check the logs and ensure all ICAR dependencies are properly installed.

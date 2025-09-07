@@ -92,15 +92,15 @@ def initialize_chatbot():
 def print_welcome():
     """Print welcome message and ICAR system information"""
     print("\n" + "="*70)
-    print("🧠 ICAR CHATBOT DEMO - Intelligent Concept-Aware RAG")
+    print("ICAR CHATBOT DEMO - Intelligent Concept-Aware RAG")
     print("="*70)
     print("Author: Barış Genç | Methodology: ICAR")
     print("\nThis advanced chatbot uses ICAR methodology and can:")
-    print("• 🎯 Understand your intent through concept extraction")
-    print("• 📚 Answer questions using intelligent concept-based retrieval")
-    print("• 🌤️ Provide weather information for cities")
-    print("• 💬 Engage in natural conversations")
-    print("• 🧠 Show detailed reasoning behind each decision")
+    print("• Understand your intent through concept extraction")
+    print("• Answer questions using intelligent concept-based retrieval")
+    print("• Provide weather information for cities")
+    print("• Engage in natural conversations")
+    print("• Show detailed reasoning behind each decision")
     print("\nThe ICAR system will explain its concept analysis for each response.")
     print("Type 'quit', 'exit', or 'bye' to end the conversation.")
     print("Type 'stats' to see ICAR system information.")
@@ -110,7 +110,7 @@ def print_stats(chatbot):
     """Print ICAR system statistics"""
     stats = chatbot.get_stats()
     print("\n" + "-"*50)
-    print("🧠 ICAR SYSTEM STATISTICS")
+    print("ICAR SYSTEM STATISTICS")
     print("-"*50)
     print(f"System: {stats.get('icar_system', 'ICAR')}")
     print(f"Methodology: {stats.get('methodology', 'By Barış Genç')}")
@@ -169,8 +169,8 @@ def main():
                 print(result['response'])
                 
                 # Display ICAR reasoning
-                print(f"\n💭 ICAR Analysis: {result['reasoning']}")
-                print(f"🔧 Action Taken: {result['action_taken']}")
+                print(f"\nICAR Analysis: {result['reasoning']}")
+                print(f"Action Taken: {result['action_taken']}")
                 print()
                 
             except KeyboardInterrupt:
