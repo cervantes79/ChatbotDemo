@@ -1,0 +1,43 @@
+{
+  "summary": {
+    "total_tests": 5,
+    "avg_improvement": 0.0,
+    "positive_improvements": 0,
+    "success_rate": 0.0
+  },
+  "metric_analysis": {
+    "relevance": {
+      "avg_normal": 0.0,
+      "avg_enhanced": 0.0,
+      "improvement_percent": 0
+    },
+    "concept": {
+      "avg_normal": 0.1,
+      "avg_enhanced": 0.1,
+      "improvement_percent": 0.0
+    },
+    "quality": {
+      "avg_normal": 0.7,
+      "avg_enhanced": 0.7,
+      "improvement_percent": 0.0
+    },
+    "specificity": {
+      "avg_normal": 0.5,
+      "avg_enhanced": 0.5,
+      "improvement_percent": 0.0
+    },
+    "completeness": {
+      "avg_normal": 0.18,
+      "avg_enhanced": 0.18,
+      "improvement_percent": 0.0
+    }
+  },
+  "category_analysis": {
+    "business": {
+      "count": 5,
+      "avg_improvement": 0.0,
+      "positive_improvements": 0
+    }
+  },
+  "timestamp": "2025-09-20T20:29:16.111633"
+}

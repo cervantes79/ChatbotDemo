@@ -1,0 +1,2272 @@
+{
+  "metadata": {
+    "total_tests": 100,
+    "timestamp": "2025-09-20T20:30:26.352659",
+    "methodology": "ICAR Prompt Enhancement Benchmark"
+  },
+  "summary": {
+    "summary": {
+      "total_tests": 100,
+      "avg_improvement": 62.6,
+      "positive_improvements": 15,
+      "success_rate": 15.0
+    },
+    "metric_analysis": {
+      "relevance": {
+        "avg_normal": 0.083,
+        "avg_enhanced": 0.085,
+        "improvement_percent": 3.02
+      },
+      "concept": {
+        "avg_normal": 0.103,
+        "avg_enhanced": 0.242,
+        "improvement_percent": 133.79
+      },
+      "quality": {
+        "avg_normal": 0.619,
+        "avg_enhanced": 0.709,
+        "improvement_percent": 14.54
+      },
+      "specificity": {
+        "avg_normal": 0.101,
+        "avg_enhanced": 0.187,
+        "improvement_percent": 85.15
+      },
+      "completeness": {
+        "avg_normal": 0.253,
+        "avg_enhanced": 0.383,
+        "improvement_percent": 51.05
+      }
+    },
+    "category_analysis": {
+      "business": {
+        "count": 25,
+        "avg_improvement": 29.64,
+        "positive_improvements": 24
+      },
+      "technical": {
+        "count": 25,
+        "avg_improvement": 42.0,
+        "positive_improvements": 25
+      },
+      "weather": {
+        "count": 20,
+        "avg_improvement": 60.94,
+        "positive_improvements": 18
+      },
+      "general": {
+        "count": 15,
+        "avg_improvement": 37.57,
+        "positive_improvements": 15
+      },
+      "complex": {
+        "count": 15,
+        "avg_improvement": 62.6,
+        "positive_improvements": 15
+      }
+    },
+    "timestamp": "2025-09-20T20:30:26.352913"
+  },
+  "detailed_results": [
+    {
+      "test_id": "test_001",
+      "category": "business",
+      "original_prompt": "What are the company work hours?",
+      "improvement_percentage": 17.73,
+      "scores": {
+        "relevance_normal": 0.9666666666666666,
+        "relevance_enhanced": 0.9666666666666666,
+        "concept_normal": 0.7,
+        "concept_enhanced": 0.85,
+        "quality_normal": 0.7,
+        "quality_enhanced": 0.7999999999999999,
+        "specificity_normal": 0.5,
+        "specificity_enhanced": 0.8,
+        "completeness_normal": 0.8,
+        "completeness_enhanced": 0.9
+      },
+      "response_lengths": {
+        "normal": 18,
+        "enhanced": 33
+      }
+    },
+    {
+      "test_id": "test_002",
+      "category": "business",
+      "original_prompt": "How do I request vacation time?",
+      "improvement_percentage": 50.0,
+      "scores": {
+        "relevance_normal": 0.0,
+        "relevance_enhanced": 0.0,
+        "concept_normal": 0.0,
+        "concept_enhanced": 0.1,
+        "quality_normal": 0.6000000000000001,
+        "quality_enhanced": 0.7,
+        "specificity_normal": 0.0,
+        "specificity_enhanced": 0.0,
+        "completeness_normal": 0.0,
+        "completeness_enhanced": 0.1
+      },
+      "response_lengths": {
+        "normal": 13,
+        "enhanced": 25
+      }
+    },
+    {
+      "test_id": "test_003",
+      "category": "business",
+      "original_prompt": "What is the employee dress code policy?",
+      "improvement_percentage": 30.88,
+      "scores": {
+        "relevance_normal": 0.7,
+        "relevance_enhanced": 0.7,
+        "concept_normal": 0.5,
+        "concept_enhanced": 0.6,
+        "quality_normal": 0.6000000000000001,
+        "quality_enhanced": 0.7,
+        "specificity_normal": 0.2,
+        "specificity_enhanced": 0.2,
+        "completeness_normal": 0.26666666666666666,
+        "completeness_enhanced": 0.7666666666666667
+      },
+      "response_lengths": {
+        "normal": 12,
+        "enhanced": 27
+      }
+    },
+    {
+      "test_id": "test_004",
+      "category": "business",
+      "original_prompt": "When is the next team meeting scheduled?",
+      "improvement_percentage": 6.45,
+      "scores": {
+        "relevance_normal": 0.55,
+        "relevance_enhanced": 0.55,
+        "concept_normal": 0.65,
+        "concept_enhanced": 0.75,
+        "quality_normal": 0.7,
+        "quality_enhanced": 0.7,
+        "specificity_normal": 0.4,
+        "specificity_enhanced": 0.4,
+        "completeness_normal": 0.8,
+        "completeness_enhanced": 0.9
+      },
+      "response_lengths": {
+        "normal": 15,
+        "enhanced": 29
+      }
+    },
+    {
+      "test_id": "test_005",
+      "category": "business",
+      "original_prompt": "What are the salary review procedures?",
+      "improvement_percentage": 30.0,
+      "scores": {
+        "relevance_normal": 0.0,
+        "relevance_enhanced": 0.0,
+        "concept_normal": 0.0,
+        "concept_enhanced": 0.1,
+        "quality_normal": 0.6000000000000001,
+        "quality_enhanced": 0.7,
+        "specificity_normal": 0.0,
+        "specificity_enhanced": 0.0,
+        "completeness_normal": 0.4,
+        "completeness_enhanced": 0.5
+      },
+      "response_lengths": {
+        "normal": 13,
+        "enhanced": 25
+      }
+    },
+    {
+      "test_id": "test_006",
+      "category": "business",
+      "original_prompt": "How do I submit expense reports?",
+      "improvement_percentage": 50.0,
+      "scores": {
+        "relevance_normal": 0.0,
+        "relevance_enhanced": 0.0,
+        "concept_normal": 0.0,
+        "concept_enhanced": 0.1,
+        "quality_normal": 0.6000000000000001,
+        "quality_enhanced": 0.7,
+        "specificity_normal": 0.0,
+        "specificity_enhanced": 0.0,
+        "completeness_normal": 0.0,
+        "completeness_enhanced": 0.1
+      },
+      "response_lengths": {
+        "normal": 13,
+        "enhanced": 25
+      }
+    },
+    {
+      "test_id": "test_007",
+      "category": "business",
+      "original_prompt": "What benefits does the company offer?",
+      "improvement_percentage": 26.35,
+      "scores": {
+        "relevance_normal": 0.4333333333333333,
+        "relevance_enhanced": 0.4333333333333333,
+        "concept_normal": 0.3,
+        "concept_enhanced": 0.44999999999999996,
+        "quality_normal": 0.7,
+        "quality_enhanced": 0.7999999999999999,
+        "specificity_normal": 0.5,
+        "specificity_enhanced": 0.8,
+        "completeness_normal": 0.5333333333333333,
+        "completeness_enhanced": 0.6333333333333333
+      },
+      "response_lengths": {
+        "normal": 18,
+        "enhanced": 33
+      }
+    },
+    {
+      "test_id": "test_008",
+      "category": "business",
+      "original_prompt": "Who is my direct manager?",
+      "improvement_percentage": 30.0,
+      "scores": {
+        "relevance_normal": 0.0,
+        "relevance_enhanced": 0.0,
+        "concept_normal": 0.0,
+        "concept_enhanced": 0.1,
+        "quality_normal": 0.6000000000000001,
+        "quality_enhanced": 0.7,
+        "specificity_normal": 0.0,
+        "specificity_enhanced": 0.0,
+        "completeness_normal": 0.4,
+        "completeness_enhanced": 0.5
+      },
+      "response_lengths": {
+        "normal": 13,
+        "enhanced": 25
+      }
+    },
+    {
+      "test_id": "test_009",
+      "category": "business",
+      "original_prompt": "What is the remote work policy?",
+      "improvement_percentage": 22.5,
+      "scores": {
+        "relevance_normal": 0.09999999999999999,
+        "relevance_enhanced": 0.09999999999999999,
+        "concept_normal": 0.3,
+        "concept_enhanced": 0.4,
+        "quality_normal": 0.6000000000000001,
+        "quality_enhanced": 0.7,
+        "specificity_normal": 0.2,
+        "specificity_enhanced": 0.2,
+        "completeness_normal": 0.13333333333333333,
+        "completeness_enhanced": 0.23333333333333334
+      },
+      "response_lengths": {
+        "normal": 12,
+        "enhanced": 28
+      }
+    },
+    {
+      "test_id": "test_010",
+      "category": "business",
+      "original_prompt": "How do I book a conference room?",
+      "improvement_percentage": 50.0,
+      "scores": {
+        "relevance_normal": 0.0,
+        "relevance_enhanced": 0.0,
+        "concept_normal": 0.0,
+        "concept_enhanced": 0.1,
+        "quality_normal": 0.6000000000000001,
+        "quality_enhanced": 0.7,
+        "specificity_normal": 0.0,
+        "specificity_enhanced": 0.0,
+        "completeness_normal": 0.0,
+        "completeness_enhanced": 0.1
+      },
+      "response_lengths": {
+        "normal": 13,
+        "enhanced": 25
+      }
+    },
+    {
+      "test_id": "test_011",
+      "category": "business",
+      "original_prompt": "What is the company mission statement?",
+      "improvement_percentage": 16.22,
+      "scores": {
+        "relevance_normal": 0.4333333333333333,
+        "relevance_enhanced": 0.4333333333333333,
+        "concept_normal": 0.3,
+        "concept_enhanced": 0.4,
+        "quality_normal": 0.7,
+        "quality_enhanced": 0.7,
+        "specificity_normal": 0.5,
+        "specificity_enhanced": 0.7,
+        "completeness_normal": 0.5333333333333333,
+        "completeness_enhanced": 0.6333333333333333
+      },
+      "response_lengths": {
+        "normal": 18,
+        "enhanced": 32
+      }
+    },
+    {
+      "test_id": "test_012",
+      "category": "business",
+      "original_prompt": "How do I access the employee portal?",
+      "improvement_percentage": 30.77,
+      "scores": {
+        "relevance_normal": 0.0,
+        "relevance_enhanced": 0.0,
+        "concept_normal": 0.1,
+        "concept_enhanced": 0.2,
+        "quality_normal": 0.7,
+        "quality_enhanced": 0.7,
+        "specificity_normal": 0.5,
+        "specificity_enhanced": 0.7,
+        "completeness_normal": 0.0,
+        "completeness_enhanced": 0.1
+      },
+      "response_lengths": {
+        "normal": 18,
+        "enhanced": 33
+      }
+    },
+    {
+      "test_id": "test_013",
+      "category": "business",
+      "original_prompt": "What is the deadline for project submissions?",
+      "improvement_percentage": 30.0,
+      "scores": {
+        "relevance_normal": 0.0,
+        "relevance_enhanced": 0.0,
+        "concept_normal": 0.0,
+        "concept_enhanced": 0.1,
+        "quality_normal": 0.6000000000000001,
+        "quality_enhanced": 0.7,
+        "specificity_normal": 0.0,
+        "specificity_enhanced": 0.0,
+        "completeness_normal": 0.4,
+        "completeness_enhanced": 0.5
+      },
+      "response_lengths": {
+        "normal": 13,
+        "enhanced": 25
+      }
+    },
+    {
+      "test_id": "test_014",
+      "category": "business",
+      "original_prompt": "How do I report a workplace incident?",
+      "improvement_percentage": 30.77,
+      "scores": {
+        "relevance_normal": 0.0,
+        "relevance_enhanced": 0.0,
+        "concept_normal": 0.1,
+        "concept_enhanced": 0.2,
+        "quality_normal": 0.7,
+        "quality_enhanced": 0.7,
+        "specificity_normal": 0.5,
+        "specificity_enhanced": 0.7,
+        "completeness_normal": 0.0,
+        "completeness_enhanced": 0.1
+      },
+      "response_lengths": {
+        "normal": 18,
+        "enhanced": 33
+      }
+    },
+    {
+      "test_id": "test_015",
+      "category": "business",
+      "original_prompt": "What training programs are available?",
+      "improvement_percentage": -19.77,
+      "scores": {
+        "relevance_normal": 0.09999999999999999,
+        "relevance_enhanced": 0.0,
+        "concept_normal": 0.19999999999999998,
+        "concept_enhanced": 0.15000000000000002,
+        "quality_normal": 0.6000000000000001,
+        "quality_enhanced": 0.7999999999999999,
+        "specificity_normal": 0.0,
+        "specificity_enhanced": 0.1,
+        "completeness_normal": 0.5333333333333333,
+        "completeness_enhanced": 0.1
+      },
+      "response_lengths": {
+        "normal": 13,
+        "enhanced": 30
+      }
+    },
+    {
+      "test_id": "test_016",
+      "category": "business",
+      "original_prompt": "How do I change my direct deposit information?",
+      "improvement_percentage": 29.03,
+      "scores": {
+        "relevance_normal": 0.09999999999999999,
+        "relevance_enhanced": 0.09999999999999999,
+        "concept_normal": 0.19999999999999998,
+        "concept_enhanced": 0.3,
+        "quality_normal": 0.6000000000000001,
+        "quality_enhanced": 0.7,
+        "specificity_normal": 0.0,
+        "specificity_enhanced": 0.0,
+        "completeness_normal": 0.13333333333333333,
+        "completeness_enhanced": 0.23333333333333334
+      },
+      "response_lengths": {
+        "normal": 13,
+        "enhanced": 25
+      }
+    },
+    {
+      "test_id": "test_017",
+      "category": "business",
+      "original_prompt": "What is the company's diversity policy?",
+      "improvement_percentage": 22.5,
+      "scores": {
+        "relevance_normal": 0.09999999999999999,
+        "relevance_enhanced": 0.09999999999999999,
+        "concept_normal": 0.3,
+        "concept_enhanced": 0.4,
+        "quality_normal": 0.6000000000000001,
+        "quality_enhanced": 0.7,
+        "specificity_normal": 0.2,
+        "specificity_enhanced": 0.2,
+        "completeness_normal": 0.13333333333333333,
+        "completeness_enhanced": 0.23333333333333334
+      },
+      "response_lengths": {
+        "normal": 12,
+        "enhanced": 28
+      }
+    },
+    {
+      "test_id": "test_018",
+      "category": "business",
+      "original_prompt": "How do I schedule a performance review?",
+      "improvement_percentage": 50.0,
+      "scores": {
+        "relevance_normal": 0.0,
+        "relevance_enhanced": 0.0,
+        "concept_normal": 0.0,
+        "concept_enhanced": 0.1,
+        "quality_normal": 0.6000000000000001,
+        "quality_enhanced": 0.7,
+        "specificity_normal": 0.0,
+        "specificity_enhanced": 0.0,
+        "completeness_normal": 0.0,
+        "completeness_enhanced": 0.1
+      },
+      "response_lengths": {
+        "normal": 13,
+        "enhanced": 25
+      }
+    },
+    {
+      "test_id": "test_019",
+      "category": "business",
+      "original_prompt": "What are the IT security guidelines?",
+      "improvement_percentage": 30.0,
+      "scores": {
+        "relevance_normal": 0.0,
+        "relevance_enhanced": 0.0,
+        "concept_normal": 0.0,
+        "concept_enhanced": 0.1,
+        "quality_normal": 0.6000000000000001,
+        "quality_enhanced": 0.7,
+        "specificity_normal": 0.0,
+        "specificity_enhanced": 0.0,
+        "completeness_normal": 0.4,
+        "completeness_enhanced": 0.5
+      },
+      "response_lengths": {
+        "normal": 13,
+        "enhanced": 25
+      }
+    },
+    {
+      "test_id": "test_020",
+      "category": "business",
+      "original_prompt": "How do I request office supplies?",
+      "improvement_percentage": 30.77,
+      "scores": {
+        "relevance_normal": 0.0,
+        "relevance_enhanced": 0.0,
+        "concept_normal": 0.1,
+        "concept_enhanced": 0.2,
+        "quality_normal": 0.7,
+        "quality_enhanced": 0.7,
+        "specificity_normal": 0.5,
+        "specificity_enhanced": 0.7,
+        "completeness_normal": 0.0,
+        "completeness_enhanced": 0.1
+      },
+      "response_lengths": {
+        "normal": 18,
+        "enhanced": 33
+      }
+    },
+    {
+      "test_id": "test_021",
+      "category": "business",
+      "original_prompt": "What is the employee referral program?",
+      "improvement_percentage": 23.53,
+      "scores": {
+        "relevance_normal": 0.0,
+        "relevance_enhanced": 0.0,
+        "concept_normal": 0.1,
+        "concept_enhanced": 0.2,
+        "quality_normal": 0.7,
+        "quality_enhanced": 0.7,
+        "specificity_normal": 0.5,
+        "specificity_enhanced": 0.7,
+        "completeness_normal": 0.4,
+        "completeness_enhanced": 0.5
+      },
+      "response_lengths": {
+        "normal": 18,
+        "enhanced": 33
+      }
+    },
+    {
+      "test_id": "test_022",
+      "category": "business",
+      "original_prompt": "How do I update my emergency contact?",
+      "improvement_percentage": 50.0,
+      "scores": {
+        "relevance_normal": 0.0,
+        "relevance_enhanced": 0.0,
+        "concept_normal": 0.0,
+        "concept_enhanced": 0.1,
+        "quality_normal": 0.6000000000000001,
+        "quality_enhanced": 0.7,
+        "specificity_normal": 0.0,
+        "specificity_enhanced": 0.0,
+        "completeness_normal": 0.0,
+        "completeness_enhanced": 0.1
+      },
+      "response_lengths": {
+        "normal": 13,
+        "enhanced": 25
+      }
+    },
+    {
+      "test_id": "test_023",
+      "category": "business",
+      "original_prompt": "What are the parking regulations?",
+      "improvement_percentage": 30.0,
+      "scores": {
+        "relevance_normal": 0.0,
+        "relevance_enhanced": 0.0,
+        "concept_normal": 0.0,
+        "concept_enhanced": 0.1,
+        "quality_normal": 0.6000000000000001,
+        "quality_enhanced": 0.7,
+        "specificity_normal": 0.0,
+        "specificity_enhanced": 0.0,
+        "completeness_normal": 0.4,
+        "completeness_enhanced": 0.5
+      },
+      "response_lengths": {
+        "normal": 13,
+        "enhanced": 25
+      }
+    },
+    {
+      "test_id": "test_024",
+      "category": "business",
+      "original_prompt": "How do I join the company health plan?",
+      "improvement_percentage": 43.33,
+      "scores": {
+        "relevance_normal": 0.2,
+        "relevance_enhanced": 0.2,
+        "concept_normal": 0.1,
+        "concept_enhanced": 0.25,
+        "quality_normal": 0.7,
+        "quality_enhanced": 0.7999999999999999,
+        "specificity_normal": 0.5,
+        "specificity_enhanced": 0.8,
+        "completeness_normal": 0.0,
+        "completeness_enhanced": 0.1
+      },
+      "response_lengths": {
+        "normal": 18,
+        "enhanced": 32
+      }
+    },
+    {
+      "test_id": "test_025",
+      "category": "business",
+      "original_prompt": "What is the procedure for reporting bugs?",
+      "improvement_percentage": 30.0,
+      "scores": {
+        "relevance_normal": 0.0,
+        "relevance_enhanced": 0.0,
+        "concept_normal": 0.0,
+        "concept_enhanced": 0.1,
+        "quality_normal": 0.6000000000000001,
+        "quality_enhanced": 0.7,
+        "specificity_normal": 0.0,
+        "specificity_enhanced": 0.0,
+        "completeness_normal": 0.4,
+        "completeness_enhanced": 0.5
+      },
+      "response_lengths": {
+        "normal": 13,
+        "enhanced": 25
+      }
+    },
+    {
+      "test_id": "test_026",
+      "category": "technical",
+      "original_prompt": "How do I optimize database performance?",
+      "improvement_percentage": 14.13,
+      "scores": {
+        "relevance_normal": 0.7,
+        "relevance_enhanced": 0.7,
+        "concept_normal": 0.45714285714285713,
+        "concept_enhanced": 0.5571428571428572,
+        "quality_normal": 0.6000000000000001,
+        "quality_enhanced": 0.7,
+        "specificity_normal": 0.1,
+        "specificity_enhanced": 0.1,
+        "completeness_normal": 0.26666666666666666,
+        "completeness_enhanced": 0.3666666666666667
+      },
+      "response_lengths": {
+        "normal": 13,
+        "enhanced": 27
+      }
+    },
+    {
+      "test_id": "test_027",
+      "category": "technical",
+      "original_prompt": "What is the best sorting algorithm for large datasets?",
+      "improvement_percentage": 21.16,
+      "scores": {
+        "relevance_normal": 0.3,
+        "relevance_enhanced": 0.3,
+        "concept_normal": 0.2571428571428571,
+        "concept_enhanced": 0.3571428571428571,
+        "quality_normal": 0.7,
+        "quality_enhanced": 0.7,
+        "specificity_normal": 0.1,
+        "specificity_enhanced": 0.30000000000000004,
+        "completeness_normal": 0.5333333333333333,
+        "completeness_enhanced": 0.6333333333333333
+      },
+      "response_lengths": {
+        "normal": 18,
+        "enhanced": 32
+      }
+    },
+    {
+      "test_id": "test_028",
+      "category": "technical",
+      "original_prompt": "How do I implement user authentication?",
+      "improvement_percentage": 50.0,
+      "scores": {
+        "relevance_normal": 0.0,
+        "relevance_enhanced": 0.0,
+        "concept_normal": 0.0,
+        "concept_enhanced": 0.1,
+        "quality_normal": 0.6000000000000001,
+        "quality_enhanced": 0.7,
+        "specificity_normal": 0.0,
+        "specificity_enhanced": 0.0,
+        "completeness_normal": 0.0,
+        "completeness_enhanced": 0.1
+      },
+      "response_lengths": {
+        "normal": 13,
+        "enhanced": 25
+      }
+    },
+    {
+      "test_id": "test_029",
+      "category": "technical",
+      "original_prompt": "What are the best practices for API design?",
+      "improvement_percentage": 30.0,
+      "scores": {
+        "relevance_normal": 0.0,
+        "relevance_enhanced": 0.0,
+        "concept_normal": 0.0,
+        "concept_enhanced": 0.1,
+        "quality_normal": 0.6000000000000001,
+        "quality_enhanced": 0.7,
+        "specificity_normal": 0.0,
+        "specificity_enhanced": 0.0,
+        "completeness_normal": 0.4,
+        "completeness_enhanced": 0.5
+      },
+      "response_lengths": {
+        "normal": 13,
+        "enhanced": 25
+      }
+    },
+    {
+      "test_id": "test_030",
+      "category": "technical",
+      "original_prompt": "How do I debug memory leaks in applications?",
+      "improvement_percentage": 50.0,
+      "scores": {
+        "relevance_normal": 0.0,
+        "relevance_enhanced": 0.0,
+        "concept_normal": 0.0,
+        "concept_enhanced": 0.1,
+        "quality_normal": 0.6000000000000001,
+        "quality_enhanced": 0.7,
+        "specificity_normal": 0.0,
+        "specificity_enhanced": 0.0,
+        "completeness_normal": 0.0,
+        "completeness_enhanced": 0.1
+      },
+      "response_lengths": {
+        "normal": 13,
+        "enhanced": 25
+      }
+    },
+    {
+      "test_id": "test_031",
+      "category": "technical",
+      "original_prompt": "What is the difference between SQL and NoSQL?",
+      "improvement_percentage": 30.0,
+      "scores": {
+        "relevance_normal": 0.0,
+        "relevance_enhanced": 0.0,
+        "concept_normal": 0.0,
+        "concept_enhanced": 0.1,
+        "quality_normal": 0.6000000000000001,
+        "quality_enhanced": 0.7,
+        "specificity_normal": 0.0,
+        "specificity_enhanced": 0.0,
+        "completeness_normal": 0.4,
+        "completeness_enhanced": 0.5
+      },
+      "response_lengths": {
+        "normal": 13,
+        "enhanced": 25
+      }
+    },
+    {
+      "test_id": "test_032",
+      "category": "technical",
+      "original_prompt": "How do I set up continuous integration?",
+      "improvement_percentage": 50.0,
+      "scores": {
+        "relevance_normal": 0.0,
+        "relevance_enhanced": 0.0,
+        "concept_normal": 0.0,
+        "concept_enhanced": 0.1,
+        "quality_normal": 0.6000000000000001,
+        "quality_enhanced": 0.7,
+        "specificity_normal": 0.0,
+        "specificity_enhanced": 0.0,
+        "completeness_normal": 0.0,
+        "completeness_enhanced": 0.1
+      },
+      "response_lengths": {
+        "normal": 13,
+        "enhanced": 25
+      }
+    },
+    {
+      "test_id": "test_033",
+      "category": "technical",
+      "original_prompt": "What are microservices architecture benefits?",
+      "improvement_percentage": 30.0,
+      "scores": {
+        "relevance_normal": 0.0,
+        "relevance_enhanced": 0.0,
+        "concept_normal": 0.0,
+        "concept_enhanced": 0.1,
+        "quality_normal": 0.6000000000000001,
+        "quality_enhanced": 0.7,
+        "specificity_normal": 0.0,
+        "specificity_enhanced": 0.0,
+        "completeness_normal": 0.4,
+        "completeness_enhanced": 0.5
+      },
+      "response_lengths": {
+        "normal": 13,
+        "enhanced": 25
+      }
+    },
+    {
+      "test_id": "test_034",
+      "category": "technical",
+      "original_prompt": "How do I implement caching strategies?",
+      "improvement_percentage": 50.0,
+      "scores": {
+        "relevance_normal": 0.0,
+        "relevance_enhanced": 0.0,
+        "concept_normal": 0.0,
+        "concept_enhanced": 0.1,
+        "quality_normal": 0.6000000000000001,
+        "quality_enhanced": 0.7,
+        "specificity_normal": 0.0,
+        "specificity_enhanced": 0.0,
+        "completeness_normal": 0.0,
+        "completeness_enhanced": 0.1
+      },
+      "response_lengths": {
+        "normal": 13,
+        "enhanced": 25
+      }
+    },
+    {
+      "test_id": "test_035",
+      "category": "technical",
+      "original_prompt": "What is test-driven development?",
+      "improvement_percentage": 30.0,
+      "scores": {
+        "relevance_normal": 0.0,
+        "relevance_enhanced": 0.0,
+        "concept_normal": 0.0,
+        "concept_enhanced": 0.1,
+        "quality_normal": 0.6000000000000001,
+        "quality_enhanced": 0.7,
+        "specificity_normal": 0.0,
+        "specificity_enhanced": 0.0,
+        "completeness_normal": 0.4,
+        "completeness_enhanced": 0.5
+      },
+      "response_lengths": {
+        "normal": 13,
+        "enhanced": 25
+      }
+    },
+    {
+      "test_id": "test_036",
+      "category": "technical",
+      "original_prompt": "How do I secure web applications?",
+      "improvement_percentage": 50.0,
+      "scores": {
+        "relevance_normal": 0.0,
+        "relevance_enhanced": 0.0,
+        "concept_normal": 0.0,
+        "concept_enhanced": 0.1,
+        "quality_normal": 0.6000000000000001,
+        "quality_enhanced": 0.7,
+        "specificity_normal": 0.0,
+        "specificity_enhanced": 0.0,
+        "completeness_normal": 0.0,
+        "completeness_enhanced": 0.1
+      },
+      "response_lengths": {
+        "normal": 13,
+        "enhanced": 25
+      }
+    },
+    {
+      "test_id": "test_037",
+      "category": "technical",
+      "original_prompt": "What are design patterns in programming?",
+      "improvement_percentage": 52.83,
+      "scores": {
+        "relevance_normal": 0.0,
+        "relevance_enhanced": 0.0,
+        "concept_normal": 0.05714285714285714,
+        "concept_enhanced": 0.15714285714285714,
+        "quality_normal": 0.6000000000000001,
+        "quality_enhanced": 0.7999999999999999,
+        "specificity_normal": 0.1,
+        "specificity_enhanced": 0.1,
+        "completeness_normal": 0.0,
+        "completeness_enhanced": 0.1
+      },
+      "response_lengths": {
+        "normal": 13,
+        "enhanced": 28
+      }
+    },
+    {
+      "test_id": "test_038",
+      "category": "technical",
+      "original_prompt": "How do I manage version control conflicts?",
+      "improvement_percentage": 50.0,
+      "scores": {
+        "relevance_normal": 0.0,
+        "relevance_enhanced": 0.0,
+        "concept_normal": 0.0,
+        "concept_enhanced": 0.1,
+        "quality_normal": 0.6000000000000001,
+        "quality_enhanced": 0.7,
+        "specificity_normal": 0.0,
+        "specificity_enhanced": 0.0,
+        "completeness_normal": 0.0,
+        "completeness_enhanced": 0.1
+      },
+      "response_lengths": {
+        "normal": 13,
+        "enhanced": 25
+      }
+    },
+    {
+      "test_id": "test_039",
+      "category": "technical",
+      "original_prompt": "What is machine learning model deployment?",
+      "improvement_percentage": 30.0,
+      "scores": {
+        "relevance_normal": 0.0,
+        "relevance_enhanced": 0.0,
+        "concept_normal": 0.0,
+        "concept_enhanced": 0.1,
+        "quality_normal": 0.6000000000000001,
+        "quality_enhanced": 0.7,
+        "specificity_normal": 0.0,
+        "specificity_enhanced": 0.0,
+        "completeness_normal": 0.4,
+        "completeness_enhanced": 0.5
+      },
+      "response_lengths": {
+        "normal": 13,
+        "enhanced": 25
+      }
+    },
+    {
+      "test_id": "test_040",
+      "category": "technical",
+      "original_prompt": "How do I optimize frontend performance?",
+      "improvement_percentage": 50.0,
+      "scores": {
+        "relevance_normal": 0.0,
+        "relevance_enhanced": 0.0,
+        "concept_normal": 0.0,
+        "concept_enhanced": 0.1,
+        "quality_normal": 0.6000000000000001,
+        "quality_enhanced": 0.7,
+        "specificity_normal": 0.0,
+        "specificity_enhanced": 0.0,
+        "completeness_normal": 0.0,
+        "completeness_enhanced": 0.1
+      },
+      "response_lengths": {
+        "normal": 13,
+        "enhanced": 25
+      }
+    },
+    {
+      "test_id": "test_041",
+      "category": "technical",
+      "original_prompt": "What are containerization benefits?",
+      "improvement_percentage": 30.0,
+      "scores": {
+        "relevance_normal": 0.0,
+        "relevance_enhanced": 0.0,
+        "concept_normal": 0.0,
+        "concept_enhanced": 0.1,
+        "quality_normal": 0.6000000000000001,
+        "quality_enhanced": 0.7,
+        "specificity_normal": 0.0,
+        "specificity_enhanced": 0.0,
+        "completeness_normal": 0.4,
+        "completeness_enhanced": 0.5
+      },
+      "response_lengths": {
+        "normal": 13,
+        "enhanced": 25
+      }
+    },
+    {
+      "test_id": "test_042",
+      "category": "technical",
+      "original_prompt": "How do I implement load balancing?",
+      "improvement_percentage": 50.0,
+      "scores": {
+        "relevance_normal": 0.0,
+        "relevance_enhanced": 0.0,
+        "concept_normal": 0.0,
+        "concept_enhanced": 0.1,
+        "quality_normal": 0.6000000000000001,
+        "quality_enhanced": 0.7,
+        "specificity_normal": 0.0,
+        "specificity_enhanced": 0.0,
+        "completeness_normal": 0.0,
+        "completeness_enhanced": 0.1
+      },
+      "response_lengths": {
+        "normal": 13,
+        "enhanced": 25
+      }
+    },
+    {
+      "test_id": "test_043",
+      "category": "technical",
+      "original_prompt": "What is the purpose of unit testing?",
+      "improvement_percentage": 30.0,
+      "scores": {
+        "relevance_normal": 0.0,
+        "relevance_enhanced": 0.0,
+        "concept_normal": 0.0,
+        "concept_enhanced": 0.1,
+        "quality_normal": 0.6000000000000001,
+        "quality_enhanced": 0.7,
+        "specificity_normal": 0.0,
+        "specificity_enhanced": 0.0,
+        "completeness_normal": 0.4,
+        "completeness_enhanced": 0.5
+      },
+      "response_lengths": {
+        "normal": 13,
+        "enhanced": 25
+      }
+    },
+    {
+      "test_id": "test_044",
+      "category": "technical",
+      "original_prompt": "How do I handle concurrent programming?",
+      "improvement_percentage": 39.62,
+      "scores": {
+        "relevance_normal": 0.0,
+        "relevance_enhanced": 0.0,
+        "concept_normal": 0.05714285714285714,
+        "concept_enhanced": 0.15714285714285714,
+        "quality_normal": 0.6000000000000001,
+        "quality_enhanced": 0.7,
+        "specificity_normal": 0.1,
+        "specificity_enhanced": 0.1,
+        "completeness_normal": 0.0,
+        "completeness_enhanced": 0.1
+      },
+      "response_lengths": {
+        "normal": 13,
+        "enhanced": 29
+      }
+    },
+    {
+      "test_id": "test_045",
+      "category": "technical",
+      "original_prompt": "What are blockchain fundamentals?",
+      "improvement_percentage": 30.0,
+      "scores": {
+        "relevance_normal": 0.0,
+        "relevance_enhanced": 0.0,
+        "concept_normal": 0.0,
+        "concept_enhanced": 0.1,
+        "quality_normal": 0.6000000000000001,
+        "quality_enhanced": 0.7,
+        "specificity_normal": 0.0,
+        "specificity_enhanced": 0.0,
+        "completeness_normal": 0.4,
+        "completeness_enhanced": 0.5
+      },
+      "response_lengths": {
+        "normal": 13,
+        "enhanced": 25
+      }
+    },
+    {
+      "test_id": "test_046",
+      "category": "technical",
+      "original_prompt": "How do I implement data validation?",
+      "improvement_percentage": 50.0,
+      "scores": {
+        "relevance_normal": 0.0,
+        "relevance_enhanced": 0.0,
+        "concept_normal": 0.0,
+        "concept_enhanced": 0.1,
+        "quality_normal": 0.6000000000000001,
+        "quality_enhanced": 0.7,
+        "specificity_normal": 0.0,
+        "specificity_enhanced": 0.0,
+        "completeness_normal": 0.0,
+        "completeness_enhanced": 0.1
+      },
+      "response_lengths": {
+        "normal": 13,
+        "enhanced": 25
+      }
+    },
+    {
+      "test_id": "test_047",
+      "category": "technical",
+      "original_prompt": "What is cloud computing architecture?",
+      "improvement_percentage": 30.0,
+      "scores": {
+        "relevance_normal": 0.0,
+        "relevance_enhanced": 0.0,
+        "concept_normal": 0.0,
+        "concept_enhanced": 0.1,
+        "quality_normal": 0.6000000000000001,
+        "quality_enhanced": 0.7,
+        "specificity_normal": 0.0,
+        "specificity_enhanced": 0.0,
+        "completeness_normal": 0.4,
+        "completeness_enhanced": 0.5
+      },
+      "response_lengths": {
+        "normal": 13,
+        "enhanced": 25
+      }
+    },
+    {
+      "test_id": "test_048",
+      "category": "technical",
+      "original_prompt": "How do I optimize mobile app performance?",
+      "improvement_percentage": 122.22,
+      "scores": {
+        "relevance_normal": 0.0,
+        "relevance_enhanced": 0.09999999999999999,
+        "concept_normal": 0.0,
+        "concept_enhanced": 0.3,
+        "quality_normal": 0.6000000000000001,
+        "quality_enhanced": 0.7,
+        "specificity_normal": 0.0,
+        "specificity_enhanced": 0.0,
+        "completeness_normal": 0.0,
+        "completeness_enhanced": 0.23333333333333334
+      },
+      "response_lengths": {
+        "normal": 13,
+        "enhanced": 25
+      }
+    },
+    {
+      "test_id": "test_049",
+      "category": "technical",
+      "original_prompt": "What are cybersecurity best practices?",
+      "improvement_percentage": 30.0,
+      "scores": {
+        "relevance_normal": 0.0,
+        "relevance_enhanced": 0.0,
+        "concept_normal": 0.0,
+        "concept_enhanced": 0.1,
+        "quality_normal": 0.6000000000000001,
+        "quality_enhanced": 0.7,
+        "specificity_normal": 0.0,
+        "specificity_enhanced": 0.0,
+        "completeness_normal": 0.4,
+        "completeness_enhanced": 0.5
+      },
+      "response_lengths": {
+        "normal": 13,
+        "enhanced": 25
+      }
+    },
+    {
+      "test_id": "test_050",
+      "category": "technical",
+      "original_prompt": "How do I implement real-time notifications?",
+      "improvement_percentage": 50.0,
+      "scores": {
+        "relevance_normal": 0.0,
+        "relevance_enhanced": 0.0,
+        "concept_normal": 0.0,
+        "concept_enhanced": 0.1,
+        "quality_normal": 0.6000000000000001,
+        "quality_enhanced": 0.7,
+        "specificity_normal": 0.0,
+        "specificity_enhanced": 0.0,
+        "completeness_normal": 0.0,
+        "completeness_enhanced": 0.1
+      },
+      "response_lengths": {
+        "normal": 13,
+        "enhanced": 25
+      }
+    },
+    {
+      "test_id": "test_051",
+      "category": "weather",
+      "original_prompt": "What's the weather like in Istanbul?",
+      "improvement_percentage": 51.93,
+      "scores": {
+        "relevance_normal": 0.35,
+        "relevance_enhanced": 0.35,
+        "concept_normal": 0.2571428571428571,
+        "concept_enhanced": 0.3571428571428571,
+        "quality_normal": 0.7,
+        "quality_enhanced": 0.7,
+        "specificity_normal": 0.1,
+        "specificity_enhanced": 0.30000000000000004,
+        "completeness_normal": 0.13333333333333333,
+        "completeness_enhanced": 0.6333333333333333
+      },
+      "response_lengths": {
+        "normal": 16,
+        "enhanced": 31
+      }
+    },
+    {
+      "test_id": "test_052",
+      "category": "weather",
+      "original_prompt": "Will it rain tomorrow in London?",
+      "improvement_percentage": 109.05,
+      "scores": {
+        "relevance_normal": 0.0,
+        "relevance_enhanced": 0.09999999999999999,
+        "concept_normal": 0.0,
+        "concept_enhanced": 0.3571428571428571,
+        "quality_normal": 0.6000000000000001,
+        "quality_enhanced": 0.7,
+        "specificity_normal": 0.0,
+        "specificity_enhanced": 0.30000000000000004,
+        "completeness_normal": 0.4,
+        "completeness_enhanced": 0.6333333333333333
+      },
+      "response_lengths": {
+        "normal": 13,
+        "enhanced": 31
+      }
+    },
+    {
+      "test_id": "test_053",
+      "category": "weather",
+      "original_prompt": "What's the temperature in New York?",
+      "improvement_percentage": -6.92,
+      "scores": {
+        "relevance_normal": 0.44999999999999996,
+        "relevance_enhanced": 0.09999999999999999,
+        "concept_normal": 0.5142857142857142,
+        "concept_enhanced": 0.3571428571428571,
+        "quality_normal": 0.6000000000000001,
+        "quality_enhanced": 0.7,
+        "specificity_normal": 0.2,
+        "specificity_enhanced": 0.1,
+        "completeness_normal": 0.26666666666666666,
+        "completeness_enhanced": 0.6333333333333333
+      },
+      "response_lengths": {
+        "normal": 12,
+        "enhanced": 30
+      }
+    },
+    {
+      "test_id": "test_054",
+      "category": "weather",
+      "original_prompt": "Is it going to be sunny this weekend?",
+      "improvement_percentage": 65.87,
+      "scores": {
+        "relevance_normal": 0.2,
+        "relevance_enhanced": 0.09999999999999999,
+        "concept_normal": 0.0,
+        "concept_enhanced": 0.3571428571428571,
+        "quality_normal": 0.6000000000000001,
+        "quality_enhanced": 0.7999999999999999,
+        "specificity_normal": 0.0,
+        "specificity_enhanced": 0.1,
+        "completeness_normal": 0.4,
+        "completeness_enhanced": 0.6333333333333333
+      },
+      "response_lengths": {
+        "normal": 13,
+        "enhanced": 30
+      }
+    },
+    {
+      "test_id": "test_055",
+      "category": "weather",
+      "original_prompt": "How's the weather in Tokyo today?",
+      "improvement_percentage": 12.98,
+      "scores": {
+        "relevance_normal": 0.35,
+        "relevance_enhanced": 0.35,
+        "concept_normal": 0.2571428571428571,
+        "concept_enhanced": 0.3571428571428571,
+        "quality_normal": 0.7,
+        "quality_enhanced": 0.7,
+        "specificity_normal": 0.1,
+        "specificity_enhanced": 0.1,
+        "completeness_normal": 0.13333333333333333,
+        "completeness_enhanced": 0.23333333333333334
+      },
+      "response_lengths": {
+        "normal": 16,
+        "enhanced": 30
+      }
+    },
+    {
+      "test_id": "test_056",
+      "category": "weather",
+      "original_prompt": "What's the forecast for Paris this week?",
+      "improvement_percentage": -5.08,
+      "scores": {
+        "relevance_normal": 0.19999999999999998,
+        "relevance_enhanced": 0.09999999999999999,
+        "concept_normal": 0.5142857142857142,
+        "concept_enhanced": 0.3571428571428571,
+        "quality_normal": 0.6000000000000001,
+        "quality_enhanced": 0.7,
+        "specificity_normal": 0.2,
+        "specificity_enhanced": 0.30000000000000004,
+        "completeness_normal": 0.26666666666666666,
+        "completeness_enhanced": 0.23333333333333334
+      },
+      "response_lengths": {
+        "normal": 11,
+        "enhanced": 32
+      }
+    },
+    {
+      "test_id": "test_057",
+      "category": "weather",
+      "original_prompt": "Will there be snow in Moscow?",
+      "improvement_percentage": 89.05,
+      "scores": {
+        "relevance_normal": 0.0,
+        "relevance_enhanced": 0.09999999999999999,
+        "concept_normal": 0.0,
+        "concept_enhanced": 0.3571428571428571,
+        "quality_normal": 0.6000000000000001,
+        "quality_enhanced": 0.7,
+        "specificity_normal": 0.0,
+        "specificity_enhanced": 0.1,
+        "completeness_normal": 0.4,
+        "completeness_enhanced": 0.6333333333333333
+      },
+      "response_lengths": {
+        "normal": 13,
+        "enhanced": 30
+      }
+    },
+    {
+      "test_id": "test_058",
+      "category": "weather",
+      "original_prompt": "What's the humidity level in Miami?",
+      "improvement_percentage": 99.05,
+      "scores": {
+        "relevance_normal": 0.0,
+        "relevance_enhanced": 0.09999999999999999,
+        "concept_normal": 0.0,
+        "concept_enhanced": 0.3571428571428571,
+        "quality_normal": 0.6000000000000001,
+        "quality_enhanced": 0.7999999999999999,
+        "specificity_normal": 0.0,
+        "specificity_enhanced": 0.1,
+        "completeness_normal": 0.4,
+        "completeness_enhanced": 0.6333333333333333
+      },
+      "response_lengths": {
+        "normal": 13,
+        "enhanced": 30
+      }
+    },
+    {
+      "test_id": "test_059",
+      "category": "weather",
+      "original_prompt": "Is it windy in Chicago today?",
+      "improvement_percentage": 109.05,
+      "scores": {
+        "relevance_normal": 0.0,
+        "relevance_enhanced": 0.09999999999999999,
+        "concept_normal": 0.0,
+        "concept_enhanced": 0.3571428571428571,
+        "quality_normal": 0.6000000000000001,
+        "quality_enhanced": 0.7,
+        "specificity_normal": 0.0,
+        "specificity_enhanced": 0.30000000000000004,
+        "completeness_normal": 0.4,
+        "completeness_enhanced": 0.6333333333333333
+      },
+      "response_lengths": {
+        "normal": 13,
+        "enhanced": 31
+      }
+    },
+    {
+      "test_id": "test_060",
+      "category": "weather",
+      "original_prompt": "What's the weather forecast for Berlin?",
+      "improvement_percentage": 51.93,
+      "scores": {
+        "relevance_normal": 0.35,
+        "relevance_enhanced": 0.35,
+        "concept_normal": 0.2571428571428571,
+        "concept_enhanced": 0.3571428571428571,
+        "quality_normal": 0.7,
+        "quality_enhanced": 0.7,
+        "specificity_normal": 0.1,
+        "specificity_enhanced": 0.30000000000000004,
+        "completeness_normal": 0.13333333333333333,
+        "completeness_enhanced": 0.6333333333333333
+      },
+      "response_lengths": {
+        "normal": 16,
+        "enhanced": 31
+      }
+    },
+    {
+      "test_id": "test_061",
+      "category": "weather",
+      "original_prompt": "Will it be hot in Dubai tomorrow?",
+      "improvement_percentage": 89.05,
+      "scores": {
+        "relevance_normal": 0.0,
+        "relevance_enhanced": 0.09999999999999999,
+        "concept_normal": 0.0,
+        "concept_enhanced": 0.3571428571428571,
+        "quality_normal": 0.6000000000000001,
+        "quality_enhanced": 0.7,
+        "specificity_normal": 0.0,
+        "specificity_enhanced": 0.1,
+        "completeness_normal": 0.4,
+        "completeness_enhanced": 0.6333333333333333
+      },
+      "response_lengths": {
+        "normal": 13,
+        "enhanced": 30
+      }
+    },
+    {
+      "test_id": "test_062",
+      "category": "weather",
+      "original_prompt": "What's the current temperature in Sydney?",
+      "improvement_percentage": 5.39,
+      "scores": {
+        "relevance_normal": 0.44999999999999996,
+        "relevance_enhanced": 0.35,
+        "concept_normal": 0.5142857142857142,
+        "concept_enhanced": 0.3571428571428571,
+        "quality_normal": 0.6000000000000001,
+        "quality_enhanced": 0.7,
+        "specificity_normal": 0.2,
+        "specificity_enhanced": 0.1,
+        "completeness_normal": 0.26666666666666666,
+        "completeness_enhanced": 0.6333333333333333
+      },
+      "response_lengths": {
+        "normal": 12,
+        "enhanced": 30
+      }
+    },
+    {
+      "test_id": "test_063",
+      "category": "weather",
+      "original_prompt": "Is there a storm coming to Florida?",
+      "improvement_percentage": 119.05,
+      "scores": {
+        "relevance_normal": 0.0,
+        "relevance_enhanced": 0.09999999999999999,
+        "concept_normal": 0.0,
+        "concept_enhanced": 0.3571428571428571,
+        "quality_normal": 0.6000000000000001,
+        "quality_enhanced": 0.7999999999999999,
+        "specificity_normal": 0.0,
+        "specificity_enhanced": 0.30000000000000004,
+        "completeness_normal": 0.4,
+        "completeness_enhanced": 0.6333333333333333
+      },
+      "response_lengths": {
+        "normal": 13,
+        "enhanced": 31
+      }
+    },
+    {
+      "test_id": "test_064",
+      "category": "weather",
+      "original_prompt": "What's the weather like in Barcelona?",
+      "improvement_percentage": 38.95,
+      "scores": {
+        "relevance_normal": 0.35,
+        "relevance_enhanced": 0.35,
+        "concept_normal": 0.2571428571428571,
+        "concept_enhanced": 0.3571428571428571,
+        "quality_normal": 0.7,
+        "quality_enhanced": 0.7,
+        "specificity_normal": 0.1,
+        "specificity_enhanced": 0.1,
+        "completeness_normal": 0.13333333333333333,
+        "completeness_enhanced": 0.6333333333333333
+      },
+      "response_lengths": {
+        "normal": 16,
+        "enhanced": 30
+      }
+    },
+    {
+      "test_id": "test_065",
+      "category": "weather",
+      "original_prompt": "Will it be cloudy in Vancouver?",
+      "improvement_percentage": 109.05,
+      "scores": {
+        "relevance_normal": 0.0,
+        "relevance_enhanced": 0.09999999999999999,
+        "concept_normal": 0.0,
+        "concept_enhanced": 0.3571428571428571,
+        "quality_normal": 0.6000000000000001,
+        "quality_enhanced": 0.7,
+        "specificity_normal": 0.0,
+        "specificity_enhanced": 0.30000000000000004,
+        "completeness_normal": 0.4,
+        "completeness_enhanced": 0.6333333333333333
+      },
+      "response_lengths": {
+        "normal": 13,
+        "enhanced": 31
+      }
+    },
+    {
+      "test_id": "test_066",
+      "category": "weather",
+      "original_prompt": "What's the weather condition in Mumbai?",
+      "improvement_percentage": 20.27,
+      "scores": {
+        "relevance_normal": 0.44999999999999996,
+        "relevance_enhanced": 0.44999999999999996,
+        "concept_normal": 0.45714285714285713,
+        "concept_enhanced": 0.5571428571428572,
+        "quality_normal": 0.7,
+        "quality_enhanced": 0.7,
+        "specificity_normal": 0.1,
+        "specificity_enhanced": 0.30000000000000004,
+        "completeness_normal": 0.26666666666666666,
+        "completeness_enhanced": 0.3666666666666667
+      },
+      "response_lengths": {
+        "normal": 16,
+        "enhanced": 32
+      }
+    },
+    {
+      "test_id": "test_067",
+      "category": "weather",
+      "original_prompt": "Is it foggy in San Francisco?",
+      "improvement_percentage": 30.0,
+      "scores": {
+        "relevance_normal": 0.0,
+        "relevance_enhanced": 0.0,
+        "concept_normal": 0.0,
+        "concept_enhanced": 0.1,
+        "quality_normal": 0.6000000000000001,
+        "quality_enhanced": 0.7,
+        "specificity_normal": 0.0,
+        "specificity_enhanced": 0.0,
+        "completeness_normal": 0.4,
+        "completeness_enhanced": 0.5
+      },
+      "response_lengths": {
+        "normal": 13,
+        "enhanced": 25
+      }
+    },
+    {
+      "test_id": "test_068",
+      "category": "weather",
+      "original_prompt": "What's the weather report for Cairo?",
+      "improvement_percentage": 51.93,
+      "scores": {
+        "relevance_normal": 0.35,
+        "relevance_enhanced": 0.35,
+        "concept_normal": 0.2571428571428571,
+        "concept_enhanced": 0.3571428571428571,
+        "quality_normal": 0.7,
+        "quality_enhanced": 0.7,
+        "specificity_normal": 0.1,
+        "specificity_enhanced": 0.30000000000000004,
+        "completeness_normal": 0.13333333333333333,
+        "completeness_enhanced": 0.6333333333333333
+      },
+      "response_lengths": {
+        "normal": 16,
+        "enhanced": 31
+      }
+    },
+    {
+      "test_id": "test_069",
+      "category": "weather",
+      "original_prompt": "Will there be thunderstorms in Atlanta?",
+      "improvement_percentage": 109.05,
+      "scores": {
+        "relevance_normal": 0.0,
+        "relevance_enhanced": 0.09999999999999999,
+        "concept_normal": 0.0,
+        "concept_enhanced": 0.3571428571428571,
+        "quality_normal": 0.6000000000000001,
+        "quality_enhanced": 0.7,
+        "specificity_normal": 0.0,
+        "specificity_enhanced": 0.30000000000000004,
+        "completeness_normal": 0.4,
+        "completeness_enhanced": 0.6333333333333333
+      },
+      "response_lengths": {
+        "normal": 13,
+        "enhanced": 31
+      }
+    },
+    {
+      "test_id": "test_070",
+      "category": "weather",
+      "original_prompt": "What's the air pressure in Denver?",
+      "improvement_percentage": 69.05,
+      "scores": {
+        "relevance_normal": 0.0,
+        "relevance_enhanced": 0.09999999999999999,
+        "concept_normal": 0.0,
+        "concept_enhanced": 0.3571428571428571,
+        "quality_normal": 0.6000000000000001,
+        "quality_enhanced": 0.7,
+        "specificity_normal": 0.0,
+        "specificity_enhanced": 0.30000000000000004,
+        "completeness_normal": 0.4,
+        "completeness_enhanced": 0.23333333333333334
+      },
+      "response_lengths": {
+        "normal": 13,
+        "enhanced": 32
+      }
+    },
+    {
+      "test_id": "test_071",
+      "category": "general",
+      "original_prompt": "What is the capital of France?",
+      "improvement_percentage": 35.29,
+      "scores": {
+        "relevance_normal": 0.0,
+        "relevance_enhanced": 0.0,
+        "concept_normal": 0.16000000000000003,
+        "concept_enhanced": 0.33999999999999997,
+        "quality_normal": 0.6000000000000001,
+        "quality_enhanced": 0.7,
+        "specificity_normal": 0.2,
+        "specificity_enhanced": 0.3,
+        "completeness_normal": 0.4,
+        "completeness_enhanced": 0.5
+      },
+      "response_lengths": {
+        "normal": 13,
+        "enhanced": 25
+      }
+    },
+    {
+      "test_id": "test_072",
+      "category": "general",
+      "original_prompt": "Who invented the telephone?",
+      "improvement_percentage": 35.29,
+      "scores": {
+        "relevance_normal": 0.0,
+        "relevance_enhanced": 0.0,
+        "concept_normal": 0.16000000000000003,
+        "concept_enhanced": 0.33999999999999997,
+        "quality_normal": 0.6000000000000001,
+        "quality_enhanced": 0.7,
+        "specificity_normal": 0.2,
+        "specificity_enhanced": 0.3,
+        "completeness_normal": 0.4,
+        "completeness_enhanced": 0.5
+      },
+      "response_lengths": {
+        "normal": 13,
+        "enhanced": 25
+      }
+    },
+    {
+      "test_id": "test_073",
+      "category": "general",
+      "original_prompt": "How do photosynthesis work?",
+      "improvement_percentage": 50.0,
+      "scores": {
+        "relevance_normal": 0.0,
+        "relevance_enhanced": 0.0,
+        "concept_normal": 0.0,
+        "concept_enhanced": 0.1,
+        "quality_normal": 0.7,
+        "quality_enhanced": 0.7999999999999999,
+        "specificity_normal": 0.3,
+        "specificity_enhanced": 0.5,
+        "completeness_normal": 0.0,
+        "completeness_enhanced": 0.1
+      },
+      "response_lengths": {
+        "normal": 18,
+        "enhanced": 32
+      }
+    },
+    {
+      "test_id": "test_074",
+      "category": "general",
+      "original_prompt": "What is the largest ocean on Earth?",
+      "improvement_percentage": 35.29,
+      "scores": {
+        "relevance_normal": 0.0,
+        "relevance_enhanced": 0.0,
+        "concept_normal": 0.16000000000000003,
+        "concept_enhanced": 0.33999999999999997,
+        "quality_normal": 0.6000000000000001,
+        "quality_enhanced": 0.7,
+        "specificity_normal": 0.2,
+        "specificity_enhanced": 0.3,
+        "completeness_normal": 0.4,
+        "completeness_enhanced": 0.5
+      },
+      "response_lengths": {
+        "normal": 13,
+        "enhanced": 25
+      }
+    },
+    {
+      "test_id": "test_075",
+      "category": "general",
+      "original_prompt": "When did World War II end?",
+      "improvement_percentage": 35.29,
+      "scores": {
+        "relevance_normal": 0.0,
+        "relevance_enhanced": 0.0,
+        "concept_normal": 0.16000000000000003,
+        "concept_enhanced": 0.33999999999999997,
+        "quality_normal": 0.6000000000000001,
+        "quality_enhanced": 0.7,
+        "specificity_normal": 0.2,
+        "specificity_enhanced": 0.3,
+        "completeness_normal": 0.4,
+        "completeness_enhanced": 0.5
+      },
+      "response_lengths": {
+        "normal": 13,
+        "enhanced": 25
+      }
+    },
+    {
+      "test_id": "test_076",
+      "category": "general",
+      "original_prompt": "What is the speed of light?",
+      "improvement_percentage": 35.29,
+      "scores": {
+        "relevance_normal": 0.0,
+        "relevance_enhanced": 0.0,
+        "concept_normal": 0.16000000000000003,
+        "concept_enhanced": 0.33999999999999997,
+        "quality_normal": 0.6000000000000001,
+        "quality_enhanced": 0.7,
+        "specificity_normal": 0.2,
+        "specificity_enhanced": 0.3,
+        "completeness_normal": 0.4,
+        "completeness_enhanced": 0.5
+      },
+      "response_lengths": {
+        "normal": 13,
+        "enhanced": 25
+      }
+    },
+    {
+      "test_id": "test_077",
+      "category": "general",
+      "original_prompt": "Who wrote Romeo and Juliet?",
+      "improvement_percentage": 35.29,
+      "scores": {
+        "relevance_normal": 0.0,
+        "relevance_enhanced": 0.0,
+        "concept_normal": 0.16000000000000003,
+        "concept_enhanced": 0.33999999999999997,
+        "quality_normal": 0.6000000000000001,
+        "quality_enhanced": 0.7,
+        "specificity_normal": 0.2,
+        "specificity_enhanced": 0.3,
+        "completeness_normal": 0.4,
+        "completeness_enhanced": 0.5
+      },
+      "response_lengths": {
+        "normal": 13,
+        "enhanced": 25
+      }
+    },
+    {
+      "test_id": "test_078",
+      "category": "general",
+      "original_prompt": "What is the formula for water?",
+      "improvement_percentage": 35.29,
+      "scores": {
+        "relevance_normal": 0.0,
+        "relevance_enhanced": 0.0,
+        "concept_normal": 0.16000000000000003,
+        "concept_enhanced": 0.33999999999999997,
+        "quality_normal": 0.6000000000000001,
+        "quality_enhanced": 0.7,
+        "specificity_normal": 0.2,
+        "specificity_enhanced": 0.3,
+        "completeness_normal": 0.4,
+        "completeness_enhanced": 0.5
+      },
+      "response_lengths": {
+        "normal": 13,
+        "enhanced": 25
+      }
+    },
+    {
+      "test_id": "test_079",
+      "category": "general",
+      "original_prompt": "How many continents are there?",
+      "improvement_percentage": 50.0,
+      "scores": {
+        "relevance_normal": 0.0,
+        "relevance_enhanced": 0.0,
+        "concept_normal": 0.16000000000000003,
+        "concept_enhanced": 0.33999999999999997,
+        "quality_normal": 0.6000000000000001,
+        "quality_enhanced": 0.7,
+        "specificity_normal": 0.2,
+        "specificity_enhanced": 0.3,
+        "completeness_normal": 0.0,
+        "completeness_enhanced": 0.1
+      },
+      "response_lengths": {
+        "normal": 13,
+        "enhanced": 25
+      }
+    },
+    {
+      "test_id": "test_080",
+      "category": "general",
+      "original_prompt": "What is the smallest planet?",
+      "improvement_percentage": 35.29,
+      "scores": {
+        "relevance_normal": 0.0,
+        "relevance_enhanced": 0.0,
+        "concept_normal": 0.16000000000000003,
+        "concept_enhanced": 0.33999999999999997,
+        "quality_normal": 0.6000000000000001,
+        "quality_enhanced": 0.7,
+        "specificity_normal": 0.2,
+        "specificity_enhanced": 0.3,
+        "completeness_normal": 0.4,
+        "completeness_enhanced": 0.5
+      },
+      "response_lengths": {
+        "normal": 13,
+        "enhanced": 25
+      }
+    },
+    {
+      "test_id": "test_081",
+      "category": "general",
+      "original_prompt": "Who painted the Mona Lisa?",
+      "improvement_percentage": 35.29,
+      "scores": {
+        "relevance_normal": 0.0,
+        "relevance_enhanced": 0.0,
+        "concept_normal": 0.16000000000000003,
+        "concept_enhanced": 0.33999999999999997,
+        "quality_normal": 0.6000000000000001,
+        "quality_enhanced": 0.7,
+        "specificity_normal": 0.2,
+        "specificity_enhanced": 0.3,
+        "completeness_normal": 0.4,
+        "completeness_enhanced": 0.5
+      },
+      "response_lengths": {
+        "normal": 13,
+        "enhanced": 25
+      }
+    },
+    {
+      "test_id": "test_082",
+      "category": "general",
+      "original_prompt": "What is democracy?",
+      "improvement_percentage": 35.29,
+      "scores": {
+        "relevance_normal": 0.0,
+        "relevance_enhanced": 0.0,
+        "concept_normal": 0.16000000000000003,
+        "concept_enhanced": 0.33999999999999997,
+        "quality_normal": 0.6000000000000001,
+        "quality_enhanced": 0.7,
+        "specificity_normal": 0.2,
+        "specificity_enhanced": 0.3,
+        "completeness_normal": 0.4,
+        "completeness_enhanced": 0.5
+      },
+      "response_lengths": {
+        "normal": 13,
+        "enhanced": 25
+      }
+    },
+    {
+      "test_id": "test_083",
+      "category": "general",
+      "original_prompt": "How do vaccines work?",
+      "improvement_percentage": 40.0,
+      "scores": {
+        "relevance_normal": 0.0,
+        "relevance_enhanced": 0.0,
+        "concept_normal": 0.0,
+        "concept_enhanced": 0.1,
+        "quality_normal": 0.7,
+        "quality_enhanced": 0.7,
+        "specificity_normal": 0.3,
+        "specificity_enhanced": 0.5,
+        "completeness_normal": 0.0,
+        "completeness_enhanced": 0.1
+      },
+      "response_lengths": {
+        "normal": 18,
+        "enhanced": 32
+      }
+    },
+    {
+      "test_id": "test_084",
+      "category": "general",
+      "original_prompt": "What causes earthquakes?",
+      "improvement_percentage": 35.29,
+      "scores": {
+        "relevance_normal": 0.0,
+        "relevance_enhanced": 0.0,
+        "concept_normal": 0.16000000000000003,
+        "concept_enhanced": 0.33999999999999997,
+        "quality_normal": 0.6000000000000001,
+        "quality_enhanced": 0.7,
+        "specificity_normal": 0.2,
+        "specificity_enhanced": 0.3,
+        "completeness_normal": 0.4,
+        "completeness_enhanced": 0.5
+      },
+      "response_lengths": {
+        "normal": 13,
+        "enhanced": 25
+      }
+    },
+    {
+      "test_id": "test_085",
+      "category": "general",
+      "original_prompt": "Who discovered penicillin?",
+      "improvement_percentage": 35.29,
+      "scores": {
+        "relevance_normal": 0.0,
+        "relevance_enhanced": 0.0,
+        "concept_normal": 0.16000000000000003,
+        "concept_enhanced": 0.33999999999999997,
+        "quality_normal": 0.6000000000000001,
+        "quality_enhanced": 0.7,
+        "specificity_normal": 0.2,
+        "specificity_enhanced": 0.3,
+        "completeness_normal": 0.4,
+        "completeness_enhanced": 0.5
+      },
+      "response_lengths": {
+        "normal": 13,
+        "enhanced": 25
+      }
+    },
+    {
+      "test_id": "test_086",
+      "category": "complex",
+      "original_prompt": "How would artificial intelligence impact future job markets?",
+      "improvement_percentage": 76.19,
+      "scores": {
+        "relevance_normal": 0.0,
+        "relevance_enhanced": 0.0,
+        "concept_normal": 0.0,
+        "concept_enhanced": 0.15714285714285714,
+        "quality_normal": 0.6000000000000001,
+        "quality_enhanced": 0.7,
+        "specificity_normal": 0.0,
+        "specificity_enhanced": 0.1,
+        "completeness_normal": 0.0,
+        "completeness_enhanced": 0.1
+      },
+      "response_lengths": {
+        "normal": 13,
+        "enhanced": 25
+      }
+    },
+    {
+      "test_id": "test_087",
+      "category": "complex",
+      "original_prompt": "What are the ethical implications of genetic engineering?",
+      "improvement_percentage": 45.71,
+      "scores": {
+        "relevance_normal": 0.0,
+        "relevance_enhanced": 0.0,
+        "concept_normal": 0.0,
+        "concept_enhanced": 0.15714285714285714,
+        "quality_normal": 0.6000000000000001,
+        "quality_enhanced": 0.7,
+        "specificity_normal": 0.0,
+        "specificity_enhanced": 0.1,
+        "completeness_normal": 0.4,
+        "completeness_enhanced": 0.5
+      },
+      "response_lengths": {
+        "normal": 13,
+        "enhanced": 25
+      }
+    },
+    {
+      "test_id": "test_088",
+      "category": "complex",
+      "original_prompt": "How can we solve climate change effectively?",
+      "improvement_percentage": 109.52,
+      "scores": {
+        "relevance_normal": 0.0,
+        "relevance_enhanced": 0.0,
+        "concept_normal": 0.0,
+        "concept_enhanced": 0.15714285714285714,
+        "quality_normal": 0.6000000000000001,
+        "quality_enhanced": 0.7,
+        "specificity_normal": 0.0,
+        "specificity_enhanced": 0.30000000000000004,
+        "completeness_normal": 0.0,
+        "completeness_enhanced": 0.1
+      },
+      "response_lengths": {
+        "normal": 13,
+        "enhanced": 31
+      }
+    },
+    {
+      "test_id": "test_089",
+      "category": "complex",
+      "original_prompt": "What strategies can reduce income inequality?",
+      "improvement_percentage": 45.71,
+      "scores": {
+        "relevance_normal": 0.0,
+        "relevance_enhanced": 0.0,
+        "concept_normal": 0.0,
+        "concept_enhanced": 0.15714285714285714,
+        "quality_normal": 0.6000000000000001,
+        "quality_enhanced": 0.7,
+        "specificity_normal": 0.0,
+        "specificity_enhanced": 0.1,
+        "completeness_normal": 0.4,
+        "completeness_enhanced": 0.5
+      },
+      "response_lengths": {
+        "normal": 13,
+        "enhanced": 25
+      }
+    },
+    {
+      "test_id": "test_090",
+      "category": "complex",
+      "original_prompt": "How do economic policies affect social welfare?",
+      "improvement_percentage": 76.19,
+      "scores": {
+        "relevance_normal": 0.0,
+        "relevance_enhanced": 0.0,
+        "concept_normal": 0.0,
+        "concept_enhanced": 0.15714285714285714,
+        "quality_normal": 0.6000000000000001,
+        "quality_enhanced": 0.7,
+        "specificity_normal": 0.0,
+        "specificity_enhanced": 0.1,
+        "completeness_normal": 0.0,
+        "completeness_enhanced": 0.1
+      },
+      "response_lengths": {
+        "normal": 13,
+        "enhanced": 25
+      }
+    },
+    {
+      "test_id": "test_091",
+      "category": "complex",
+      "original_prompt": "What are the long-term effects of remote work?",
+      "improvement_percentage": 21.82,
+      "scores": {
+        "relevance_normal": 0.09999999999999999,
+        "relevance_enhanced": 0.09999999999999999,
+        "concept_normal": 0.19999999999999998,
+        "concept_enhanced": 0.3,
+        "quality_normal": 0.7,
+        "quality_enhanced": 0.7,
+        "specificity_normal": 0.3,
+        "specificity_enhanced": 0.5,
+        "completeness_normal": 0.5333333333333333,
+        "completeness_enhanced": 0.6333333333333333
+      },
+      "response_lengths": {
+        "normal": 18,
+        "enhanced": 34
+      }
+    },
+    {
+      "test_id": "test_092",
+      "category": "complex",
+      "original_prompt": "How can education systems adapt to digital transformation?",
+      "improvement_percentage": 76.19,
+      "scores": {
+        "relevance_normal": 0.0,
+        "relevance_enhanced": 0.0,
+        "concept_normal": 0.0,
+        "concept_enhanced": 0.15714285714285714,
+        "quality_normal": 0.6000000000000001,
+        "quality_enhanced": 0.7,
+        "specificity_normal": 0.0,
+        "specificity_enhanced": 0.1,
+        "completeness_normal": 0.0,
+        "completeness_enhanced": 0.1
+      },
+      "response_lengths": {
+        "normal": 13,
+        "enhanced": 25
+      }
+    },
+    {
+      "test_id": "test_093",
+      "category": "complex",
+      "original_prompt": "What role does technology play in mental health?",
+      "improvement_percentage": 45.71,
+      "scores": {
+        "relevance_normal": 0.0,
+        "relevance_enhanced": 0.0,
+        "concept_normal": 0.0,
+        "concept_enhanced": 0.15714285714285714,
+        "quality_normal": 0.6000000000000001,
+        "quality_enhanced": 0.7,
+        "specificity_normal": 0.0,
+        "specificity_enhanced": 0.1,
+        "completeness_normal": 0.4,
+        "completeness_enhanced": 0.5
+      },
+      "response_lengths": {
+        "normal": 13,
+        "enhanced": 25
+      }
+    },
+    {
+      "test_id": "test_094",
+      "category": "complex",
+      "original_prompt": "How can cities become more sustainable?",
+      "improvement_percentage": 76.19,
+      "scores": {
+        "relevance_normal": 0.0,
+        "relevance_enhanced": 0.0,
+        "concept_normal": 0.0,
+        "concept_enhanced": 0.15714285714285714,
+        "quality_normal": 0.6000000000000001,
+        "quality_enhanced": 0.7,
+        "specificity_normal": 0.0,
+        "specificity_enhanced": 0.1,
+        "completeness_normal": 0.0,
+        "completeness_enhanced": 0.1
+      },
+      "response_lengths": {
+        "normal": 13,
+        "enhanced": 25
+      }
+    },
+    {
+      "test_id": "test_095",
+      "category": "complex",
+      "original_prompt": "What are the implications of space exploration for humanity?",
+      "improvement_percentage": 45.71,
+      "scores": {
+        "relevance_normal": 0.0,
+        "relevance_enhanced": 0.0,
+        "concept_normal": 0.0,
+        "concept_enhanced": 0.15714285714285714,
+        "quality_normal": 0.6000000000000001,
+        "quality_enhanced": 0.7,
+        "specificity_normal": 0.0,
+        "specificity_enhanced": 0.1,
+        "completeness_normal": 0.4,
+        "completeness_enhanced": 0.5
+      },
+      "response_lengths": {
+        "normal": 13,
+        "enhanced": 25
+      }
+    },
+    {
+      "test_id": "test_096",
+      "category": "complex",
+      "original_prompt": "How do cultural differences affect global business?",
+      "improvement_percentage": 76.19,
+      "scores": {
+        "relevance_normal": 0.0,
+        "relevance_enhanced": 0.0,
+        "concept_normal": 0.0,
+        "concept_enhanced": 0.15714285714285714,
+        "quality_normal": 0.6000000000000001,
+        "quality_enhanced": 0.7,
+        "specificity_normal": 0.0,
+        "specificity_enhanced": 0.1,
+        "completeness_normal": 0.0,
+        "completeness_enhanced": 0.1
+      },
+      "response_lengths": {
+        "normal": 13,
+        "enhanced": 25
+      }
+    },
+    {
+      "test_id": "test_097",
+      "category": "complex",
+      "original_prompt": "What strategies can combat misinformation online?",
+      "improvement_percentage": 45.71,
+      "scores": {
+        "relevance_normal": 0.0,
+        "relevance_enhanced": 0.0,
+        "concept_normal": 0.0,
+        "concept_enhanced": 0.15714285714285714,
+        "quality_normal": 0.6000000000000001,
+        "quality_enhanced": 0.7,
+        "specificity_normal": 0.0,
+        "specificity_enhanced": 0.1,
+        "completeness_normal": 0.4,
+        "completeness_enhanced": 0.5
+      },
+      "response_lengths": {
+        "normal": 13,
+        "enhanced": 25
+      }
+    },
+    {
+      "test_id": "test_098",
+      "category": "complex",
+      "original_prompt": "How can renewable energy replace fossil fuels?",
+      "improvement_percentage": 76.19,
+      "scores": {
+        "relevance_normal": 0.0,
+        "relevance_enhanced": 0.0,
+        "concept_normal": 0.0,
+        "concept_enhanced": 0.15714285714285714,
+        "quality_normal": 0.6000000000000001,
+        "quality_enhanced": 0.7,
+        "specificity_normal": 0.0,
+        "specificity_enhanced": 0.1,
+        "completeness_normal": 0.0,
+        "completeness_enhanced": 0.1
+      },
+      "response_lengths": {
+        "normal": 13,
+        "enhanced": 25
+      }
+    },
+    {
+      "test_id": "test_099",
+      "category": "complex",
+      "original_prompt": "What are the societal impacts of social media?",
+      "improvement_percentage": 45.71,
+      "scores": {
+        "relevance_normal": 0.0,
+        "relevance_enhanced": 0.0,
+        "concept_normal": 0.0,
+        "concept_enhanced": 0.15714285714285714,
+        "quality_normal": 0.6000000000000001,
+        "quality_enhanced": 0.7,
+        "specificity_normal": 0.0,
+        "specificity_enhanced": 0.1,
+        "completeness_normal": 0.4,
+        "completeness_enhanced": 0.5
+      },
+      "response_lengths": {
+        "normal": 13,
+        "enhanced": 25
+      }
+    },
+    {
+      "test_id": "test_100",
+      "category": "complex",
+      "original_prompt": "How can healthcare systems prepare for future pandemics?",
+      "improvement_percentage": 76.19,
+      "scores": {
+        "relevance_normal": 0.0,
+        "relevance_enhanced": 0.0,
+        "concept_normal": 0.0,
+        "concept_enhanced": 0.15714285714285714,
+        "quality_normal": 0.6000000000000001,
+        "quality_enhanced": 0.7,
+        "specificity_normal": 0.0,
+        "specificity_enhanced": 0.1,
+        "completeness_normal": 0.0,
+        "completeness_enhanced": 0.1
+      },
+      "response_lengths": {
+        "normal": 13,
+        "enhanced": 25
+      }
+    }
+  ]
+}

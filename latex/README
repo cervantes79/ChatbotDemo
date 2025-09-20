@@ -1,0 +1,25 @@
+ArXiv Submission Package for ICAR Paper
+========================================
+
+This package contains the LaTeX source files for the paper:
+
+"ICAR: Intelligent Concept-Aware Retrieval-Augmented Generation for Enhanced Information Systems"
+by Barış Genç
+
+Files included:
+- ICAR_Academic_Paper.tex - Main LaTeX source file
+- README - This file
+
+Compilation instructions:
+1. pdflatex ICAR_Academic_Paper.tex
+2. pdflatex ICAR_Academic_Paper.tex (run twice for proper cross-references)
+
+The paper has been prepared according to arXiv submission guidelines:
+- Uses standard article document class
+- All required packages are included
+- File naming conventions follow arXiv requirements
+- No external dependencies or figures
+
+Author: Barış Genç
+Date: September 2025
+Code repository: https://github.com/cervantes79/ChatbotDemo

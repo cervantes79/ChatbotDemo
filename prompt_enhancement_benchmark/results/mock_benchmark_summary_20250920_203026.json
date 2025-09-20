@@ -1,0 +1,63 @@
+{
+  "summary": {
+    "total_tests": 100,
+    "avg_improvement": 62.6,
+    "positive_improvements": 15,
+    "success_rate": 15.0
+  },
+  "metric_analysis": {
+    "relevance": {
+      "avg_normal": 0.083,
+      "avg_enhanced": 0.085,
+      "improvement_percent": 3.02
+    },
+    "concept": {
+      "avg_normal": 0.103,
+      "avg_enhanced": 0.242,
+      "improvement_percent": 133.79
+    },
+    "quality": {
+      "avg_normal": 0.619,
+      "avg_enhanced": 0.709,
+      "improvement_percent": 14.54
+    },
+    "specificity": {
+      "avg_normal": 0.101,
+      "avg_enhanced": 0.187,
+      "improvement_percent": 85.15
+    },
+    "completeness": {
+      "avg_normal": 0.253,
+      "avg_enhanced": 0.383,
+      "improvement_percent": 51.05
+    }
+  },
+  "category_analysis": {
+    "business": {
+      "count": 25,
+      "avg_improvement": 29.64,
+      "positive_improvements": 24
+    },
+    "technical": {
+      "count": 25,
+      "avg_improvement": 42.0,
+      "positive_improvements": 25
+    },
+    "weather": {
+      "count": 20,
+      "avg_improvement": 60.94,
+      "positive_improvements": 18
+    },
+    "general": {
+      "count": 15,
+      "avg_improvement": 37.57,
+      "positive_improvements": 15
+    },
+    "complex": {
+      "count": 15,
+      "avg_improvement": 62.6,
+      "positive_improvements": 15
+    }
+  },
+  "timestamp": "2025-09-20T20:30:26.350940"
+}

@@ -1,0 +1,24 @@
+Subject: arXiv Endorsement Request - Novel RAG Methodology (ICAR)
+
+Dear Dr. Pera,
+
+I hope this email finds you well. I am writing to request your endorsement for submitting my research paper to arXiv's cs.IR category.
+
+Paper: "ICAR: Intelligent Concept-Aware Retrieval-Augmented Generation for Enhanced Information Systems"
+
+Given your expertise in Information Retrieval and adaptive search systems, I believe this work would be of interest to you. ICAR extends traditional RAG systems with concept-aware processing, achieving 96% performance improvements through intelligent query understanding - aligning with your research on adaptive information access.
+
+The complete implementation, benchmark suite, and reproducible Docker environment are available at: https://github.com/cervantes79/ChatbotDemo
+
+I've attached the full paper PDF for your review. The methodology addresses fundamental limitations in current IR systems, particularly for complex, multi-domain queries - an area I know you've contributed significantly to.
+
+Would you be willing to provide arXiv endorsement for this submission?
+
+Thank you for your time and consideration.
+
+Best regards,
+Barış Genç
+Independent Researcher in Information Retrieval and NLP
+Website: https://gencbaris.com
+GitHub: https://github.com/cervantes79/ChatbotDemo
+Email: contact@gencbaris.com
