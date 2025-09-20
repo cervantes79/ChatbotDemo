@@ -21,6 +21,12 @@ share/python-wheels/
 .installed.cfg
 *.egg
 MANIFEST
+latex/
+.md
+venv/
+pip-wheel-metadata/
+pip-log.txt
+
 
 # Virtual Environment
 .env

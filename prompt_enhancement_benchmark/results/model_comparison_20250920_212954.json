@@ -1,0 +1,94 @@
+{
+  "gpt2": {
+    "info": {
+      "name": "gpt2",
+      "size": "124M parameters",
+      "description": "GPT-2 small - general purpose"
+    },
+    "avg_improvement": -34.674,
+    "tests": [
+      {
+        "test": "What are the company work hours?",
+        "improvement": -25.0,
+        "normal_length": 239,
+        "enhanced_length": 152
+      },
+      {
+        "test": "How do I request vacation time?",
+        "improvement": -48.09,
+        "normal_length": 200,
+        "enhanced_length": 208
+      },
+      {
+        "test": "What is the employee dress code policy?",
+        "improvement": -29.14,
+        "normal_length": 208,
+        "enhanced_length": 182
+      },
+      {
+        "test": "When is the next team meeting scheduled?",
+        "improvement": -12.65,
+        "normal_length": 204,
+        "enhanced_length": 125
+      },
+      {
+        "test": "What are the salary review procedures?",
+        "improvement": -58.49,
+        "normal_length": 196,
+        "enhanced_length": 117
+      }
+    ],
+    "success_count": 5
+  },
+  "gpt2-medium": {
+    "info": {
+      "name": "gpt2-medium",
+      "size": "355M parameters",
+      "description": "GPT-2 medium - better quality"
+    },
+    "avg_improvement": 0,
+    "tests": [],
+    "success_count": 0
+  },
+  "distilgpt2": {
+    "info": {
+      "name": "distilgpt2",
+      "size": "82M parameters",
+      "description": "Distilled GPT-2 - faster"
+    },
+    "avg_improvement": 398.22799999999995,
+    "tests": [
+      {
+        "test": "What are the company work hours?",
+        "improvement": -93.48,
+        "normal_length": 240,
+        "enhanced_length": 73
+      },
+      {
+        "test": "How do I request vacation time?",
+        "improvement": 277.78,
+        "normal_length": 21,
+        "enhanced_length": 147
+      },
+      {
+        "test": "What is the employee dress code policy?",
+        "improvement": 1150.0,
+        "normal_length": 21,
+        "enhanced_length": 164
+      },
+      {
+        "test": "When is the next team meeting scheduled?",
+        "improvement": -15.38,
+        "normal_length": 145,
+        "enhanced_length": 193
+      },
+      {
+        "test": "What are the salary review procedures?",
+        "improvement": 672.22,
+        "normal_length": 21,
+        "enhanced_length": 200
+      }
+    ],
+    "success_count": 5
+  }
+}

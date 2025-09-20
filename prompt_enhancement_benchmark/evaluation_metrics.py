@@ -69,7 +69,7 @@ class ResponseEvaluator:
 
         return EvaluationResult(
             test_id=test_case["id"],
-            original_prompt=test_case["query"],
+            original_prompt=test_case.get("query", test_case.get("prompt", "")),
             enhanced_prompt="",  # Will be filled by benchmark runner
             normal_response=normal_response,
             enhanced_response=enhanced_response,
@@ -81,7 +81,7 @@ class ResponseEvaluator:
 
     def _calculate_relevance(self, test_case: Dict, response: str) -> float:
         """Calculate how relevant the response is to the query"""
-        query = test_case["query"].lower()
+        query = test_case.get("query", test_case.get("prompt", "")).lower()
         response = response.lower()
 
         # Check for query keywords in response
@@ -213,7 +213,7 @@ class ResponseEvaluator:
         completeness_score = 0.0
 
         # Check if response addresses the main question
-        query_type = self._identify_query_type(test_case["query"])
+        query_type = self._identify_query_type(test_case.get("query", test_case.get("prompt", "")))
         if self._addresses_query_type(query_type, response):
             completeness_score += 0.4
 

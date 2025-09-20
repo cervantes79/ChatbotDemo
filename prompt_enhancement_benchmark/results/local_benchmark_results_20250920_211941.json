@@ -1,0 +1,349 @@
+{
+  "model": "microsoft/DialoGPT-small",
+  "timestamp": "20250920_211941",
+  "results": [
+    {
+      "test_id": "test_001",
+      "original_query": "What are the company work hours?",
+      "enhanced_prompt": "[CONCEPT ANALYSIS]\nPrimary Category: business\nKey Concepts: work, company, hours\nHigh Confidence Concepts: work, company, hours\nContext Understanding: This query relates to business domain and involves concepts like work, company, hours.\n\n[ORIGINAL QUERY]\nWhat are the company work hours?\n\n[ENHANCED CONTEXT]\nPlease provide a response that considers the business context and addresses the key concepts: work, company, hours.",
+      "normal_response": "I understand your question and will provide a helpful response.",
+      "enhanced_response": "I understand your question and will provide a helpful response.",
+      "improvement": 0.0,
+      "scores": {
+        "relevance_normal": 0.0,
+        "relevance_enhanced": 0.0,
+        "concept_normal": 0.0,
+        "concept_enhanced": 0.0,
+        "quality_normal": 0.6000000000000001,
+        "quality_enhanced": 0.6000000000000001,
+        "specificity_normal": 0.0,
+        "specificity_enhanced": 0.0,
+        "completeness_normal": 0.0,
+        "completeness_enhanced": 0.0
+      }
+    },
+    {
+      "test_id": "test_002",
+      "original_query": "How do I request vacation time?",
+      "enhanced_prompt": "[CONCEPT ANALYSIS]\nPrimary Category: business\nKey Concepts: vacation, time\nHigh Confidence Concepts: \nContext Understanding: This query relates to business domain and involves concepts like vacation, time.\n\n[ORIGINAL QUERY]\nHow do I request vacation time?\n\n[ENHANCED CONTEXT]\nPlease provide a response that considers the business context and addresses the key concepts: vacation, time.",
+      "normal_response": "I understand your question and will provide a helpful response.",
+      "enhanced_response": "now.soon.soon.soon.all.required.required.required.required.required.required.required.required.required.required.required.required.required.",
+      "improvement": -41.18,
+      "scores": {
+        "relevance_normal": 0.25,
+        "relevance_enhanced": 0.0,
+        "concept_normal": 0.0,
+        "concept_enhanced": 0.0,
+        "quality_normal": 0.6000000000000001,
+        "quality_enhanced": 0.5,
+        "specificity_normal": 0.0,
+        "specificity_enhanced": 0.0,
+        "completeness_normal": 0.0,
+        "completeness_enhanced": 0.0
+      }
+    },
+    {
+      "test_id": "test_003",
+      "original_query": "What is the employee dress code policy?",
+      "enhanced_prompt": "[CONCEPT ANALYSIS]\nPrimary Category: business\nKey Concepts: policy, employee\nHigh Confidence Concepts: \nContext Understanding: This query relates to business domain and involves concepts like policy, employee.\n\n[ORIGINAL QUERY]\nWhat is the employee dress code policy?\n\n[ENHANCED CONTEXT]\nPlease provide a response that considers the business context and addresses the key concepts: policy, employee.",
+      "normal_response": "I understand your question and will provide a helpful response.",
+      "enhanced_response": "company.com",
+      "improvement": 8.33,
+      "scores": {
+        "relevance_normal": 0.0,
+        "relevance_enhanced": 0.0,
+        "concept_normal": 0.0,
+        "concept_enhanced": 0.05,
+        "quality_normal": 0.6000000000000001,
+        "quality_enhanced": 0.5,
+        "specificity_normal": 0.0,
+        "specificity_enhanced": 0.1,
+        "completeness_normal": 0.0,
+        "completeness_enhanced": 0.0
+      }
+    },
+    {
+      "test_id": "test_004",
+      "original_query": "When is the next team meeting scheduled?",
+      "enhanced_prompt": "[CONCEPT ANALYSIS]\nPrimary Category: business\nKey Concepts: meeting, schedule, team, when\nHigh Confidence Concepts: meeting, schedule, team\nContext Understanding: This query relates to business domain and involves concepts like meeting, schedule, team.\n\n[ORIGINAL QUERY]\nWhen is the next team meeting scheduled?\n\n[ENHANCED CONTEXT]\nPlease provide a response that considers the business context and addresses the key concepts: meeting, schedule, team.",
+      "normal_response": "I understand your question and will provide a helpful response.",
+      "enhanced_response": "are.very.confusing.and.are.allexic.and.beyond.minutes.",
+      "improvement": -50.0,
+      "scores": {
+        "relevance_normal": 0.0,
+        "relevance_enhanced": 0.0,
+        "concept_normal": 0.0,
+        "concept_enhanced": 0.0,
+        "quality_normal": 0.6000000000000001,
+        "quality_enhanced": 0.5,
+        "specificity_normal": 0.0,
+        "specificity_enhanced": 0.0,
+        "completeness_normal": 0.4,
+        "completeness_enhanced": 0.0
+      }
+    },
+    {
+      "test_id": "test_005",
+      "original_query": "What are the salary review procedures?",
+      "enhanced_prompt": "[CONCEPT ANALYSIS]\nPrimary Category: business\nKey Concepts: procedure, salary\nHigh Confidence Concepts: \nContext Understanding: This query relates to business domain and involves concepts like procedure, salary.\n\n[ORIGINAL QUERY]\nWhat are the salary review procedures?\n\n[ENHANCED CONTEXT]\nPlease provide a response that considers the business context and addresses the key concepts: procedure, salary.",
+      "normal_response": "I understand your question and will provide a helpful response.",
+      "enhanced_response": "processing.processing.processing.processing.processing.processing.processing.processing.processing.processing.processing.processing.processing.processing.processing.processing.processing.processing.",
+      "improvement": -16.67,
+      "scores": {
+        "relevance_normal": 0.0,
+        "relevance_enhanced": 0.0,
+        "concept_normal": 0.0,
+        "concept_enhanced": 0.0,
+        "quality_normal": 0.6000000000000001,
+        "quality_enhanced": 0.5,
+        "specificity_normal": 0.0,
+        "specificity_enhanced": 0.0,
+        "completeness_normal": 0.0,
+        "completeness_enhanced": 0.0
+      }
+    },
+    {
+      "test_id": "test_006",
+      "original_query": "How do I submit expense reports?",
+      "enhanced_prompt": "[CONCEPT ANALYSIS]\nPrimary Category: financial\nKey Concepts: expense\nHigh Confidence Concepts: \nContext Understanding: This query relates to financial domain and involves concepts like expense.\n\n[ORIGINAL QUERY]\nHow do I submit expense reports?\n\n[ENHANCED CONTEXT]\nPlease provide a response that considers the financial context and addresses the key concepts: expense.",
+      "normal_response": "I don't have any expense reports.",
+      "enhanced_response": "info.com.au.com.au.com.au.com.com.au.com.com.au.com.com.au.com.com.au.com.au",
+      "improvement": -73.21,
+      "scores": {
+        "relevance_normal": 0.7,
+        "relevance_enhanced": 0.0,
+        "concept_normal": 0.39999999999999997,
+        "concept_enhanced": 0.0,
+        "quality_normal": 0.5,
+        "quality_enhanced": 0.5,
+        "specificity_normal": 0.0,
+        "specificity_enhanced": 0.0,
+        "completeness_normal": 0.26666666666666666,
+        "completeness_enhanced": 0.0
+      }
+    },
+    {
+      "test_id": "test_007",
+      "original_query": "What benefits does the company offer?",
+      "enhanced_prompt": "[CONCEPT ANALYSIS]\nPrimary Category: business\nKey Concepts: company, benefits\nHigh Confidence Concepts: \nContext Understanding: This query relates to business domain and involves concepts like company, benefits.\n\n[ORIGINAL QUERY]\nWhat benefits does the company offer?\n\n[ENHANCED CONTEXT]\nPlease provide a response that considers the business context and addresses the key concepts: company, benefits.",
+      "normal_response": "I understand your question and will provide a helpful response.",
+      "enhanced_response": "com, and company.com.com.com",
+      "improvement": 80.56,
+      "scores": {
+        "relevance_normal": 0.0,
+        "relevance_enhanced": 0.09999999999999999,
+        "concept_normal": 0.0,
+        "concept_enhanced": 0.25,
+        "quality_normal": 0.6000000000000001,
+        "quality_enhanced": 0.5,
+        "specificity_normal": 0.0,
+        "specificity_enhanced": 0.1,
+        "completeness_normal": 0.0,
+        "completeness_enhanced": 0.13333333333333333
+      }
+    },
+    {
+      "test_id": "test_008",
+      "original_query": "Who is my direct manager?",
+      "enhanced_prompt": "[CONCEPT ANALYSIS]\nPrimary Category: business\nKey Concepts: manager\nHigh Confidence Concepts: \nContext Understanding: This query relates to business domain and involves concepts like manager.\n\n[ORIGINAL QUERY]\nWho is my direct manager?\n\n[ENHANCED CONTEXT]\nPlease provide a response that considers the business context and addresses the key concepts: manager.",
+      "normal_response": "I understand your question and will provide a helpful response.",
+      "enhanced_response": "fovfov.com",
+      "improvement": -50.0,
+      "scores": {
+        "relevance_normal": 0.0,
+        "relevance_enhanced": 0.0,
+        "concept_normal": 0.0,
+        "concept_enhanced": 0.0,
+        "quality_normal": 0.6000000000000001,
+        "quality_enhanced": 0.5,
+        "specificity_normal": 0.0,
+        "specificity_enhanced": 0.0,
+        "completeness_normal": 0.4,
+        "completeness_enhanced": 0.0
+      }
+    },
+    {
+      "test_id": "test_009",
+      "original_query": "What is the remote work policy?",
+      "enhanced_prompt": "[CONCEPT ANALYSIS]\nPrimary Category: business\nKey Concepts: policy, work\nHigh Confidence Concepts: \nContext Understanding: This query relates to business domain and involves concepts like policy, work.\n\n[ORIGINAL QUERY]\nWhat is the remote work policy?\n\n[ENHANCED CONTEXT]\nPlease provide a response that considers the business context and addresses the key concepts: policy, work.",
+      "normal_response": "I understand your question and will provide a helpful response.",
+      "enhanced_response": "admin.admin.admin.admin.admin.admin.admin.admin.admin.admin.admin.admin.admin.admin.admin.admin.admin.admin.",
+      "improvement": -16.67,
+      "scores": {
+        "relevance_normal": 0.0,
+        "relevance_enhanced": 0.0,
+        "concept_normal": 0.0,
+        "concept_enhanced": 0.0,
+        "quality_normal": 0.6000000000000001,
+        "quality_enhanced": 0.5,
+        "specificity_normal": 0.0,
+        "specificity_enhanced": 0.0,
+        "completeness_normal": 0.0,
+        "completeness_enhanced": 0.0
+      }
+    },
+    {
+      "test_id": "test_010",
+      "original_query": "How do I book a conference room?",
+      "enhanced_prompt": "How do I book a conference room?",
+      "normal_response": "I understand your question and will provide a helpful response.",
+      "enhanced_response": "I understand your question and will provide a helpful response.",
+      "improvement": 0.0,
+      "scores": {
+        "relevance_normal": 0.25,
+        "relevance_enhanced": 0.25,
+        "concept_normal": 0.0,
+        "concept_enhanced": 0.0,
+        "quality_normal": 0.6000000000000001,
+        "quality_enhanced": 0.6000000000000001,
+        "specificity_normal": 0.0,
+        "specificity_enhanced": 0.0,
+        "completeness_normal": 0.0,
+        "completeness_enhanced": 0.0
+      }
+    },
+    {
+      "test_id": "test_011",
+      "original_query": "What is the company mission statement?",
+      "enhanced_prompt": "[CONCEPT ANALYSIS]\nPrimary Category: business\nKey Concepts: company\nHigh Confidence Concepts: \nContext Understanding: This query relates to business domain and involves concepts like company.\n\n[ORIGINAL QUERY]\nWhat is the company mission statement?\n\n[ENHANCED CONTEXT]\nPlease provide a response that considers the business context and addresses the key concepts: company.",
+      "normal_response": "I understand your question and will provide a helpful response.",
+      "enhanced_response": "company.company.company.company.company.company.company.company.company.company.company.company.company.company.company.company.company.company.company.company.company.",
+      "improvement": 80.56,
+      "scores": {
+        "relevance_normal": 0.0,
+        "relevance_enhanced": 0.09999999999999999,
+        "concept_normal": 0.0,
+        "concept_enhanced": 0.25,
+        "quality_normal": 0.6000000000000001,
+        "quality_enhanced": 0.5,
+        "specificity_normal": 0.0,
+        "specificity_enhanced": 0.1,
+        "completeness_normal": 0.0,
+        "completeness_enhanced": 0.13333333333333333
+      }
+    },
+    {
+      "test_id": "test_012",
+      "original_query": "How do I access the employee portal?",
+      "enhanced_prompt": "[CONCEPT ANALYSIS]\nPrimary Category: business\nKey Concepts: employee\nHigh Confidence Concepts: \nContext Understanding: This query relates to business domain and involves concepts like employee.\n\n[ORIGINAL QUERY]\nHow do I access the employee portal?\n\n[ENHANCED CONTEXT]\nPlease provide a response that considers the business context and addresses the key concepts: employee.",
+      "normal_response": "I understand your question and will provide a helpful response.",
+      "enhanced_response": "company.company.company.company.company.company.company.company.company.company.company.company.company.company.company.company.company.company.company.company.company",
+      "improvement": -23.53,
+      "scores": {
+        "relevance_normal": 0.25,
+        "relevance_enhanced": 0.0,
+        "concept_normal": 0.0,
+        "concept_enhanced": 0.05,
+        "quality_normal": 0.6000000000000001,
+        "quality_enhanced": 0.5,
+        "specificity_normal": 0.0,
+        "specificity_enhanced": 0.1,
+        "completeness_normal": 0.0,
+        "completeness_enhanced": 0.0
+      }
+    },
+    {
+      "test_id": "test_013",
+      "original_query": "What is the deadline for project submissions?",
+      "enhanced_prompt": "[CONCEPT ANALYSIS]\nPrimary Category: business\nKey Concepts: project, deadline\nHigh Confidence Concepts: project\nContext Understanding: This query relates to business domain and involves concepts like project, deadline.\n\n[ORIGINAL QUERY]\nWhat is the deadline for project submissions?\n\n[ENHANCED CONTEXT]\nPlease provide a response that considers the business context and addresses the key concepts: project, deadline.",
+      "normal_response": "I understand your question and will provide a helpful response.",
+      "enhanced_response": "com",
+      "improvement": -100.0,
+      "scores": {
+        "relevance_normal": 0.0,
+        "relevance_enhanced": 0.0,
+        "concept_normal": 0.0,
+        "concept_enhanced": 0.0,
+        "quality_normal": 0.6000000000000001,
+        "quality_enhanced": 0.0,
+        "specificity_normal": 0.0,
+        "specificity_enhanced": 0.0,
+        "completeness_normal": 0.0,
+        "completeness_enhanced": 0.0
+      }
+    },
+    {
+      "test_id": "test_014",
+      "original_query": "How do I report a workplace incident?",
+      "enhanced_prompt": "[CONCEPT ANALYSIS]\nPrimary Category: business\nKey Concepts: work, place\nHigh Confidence Concepts: \nContext Understanding: This query relates to business domain and involves concepts like work, place.\n\n[ORIGINAL QUERY]\nHow do I report a workplace incident?\n\n[ENHANCED CONTEXT]\nPlease provide a response that considers the business context and addresses the key concepts: work, place.",
+      "normal_response": "I understand your question and will provide a helpful response.",
+      "enhanced_response": "commerce.business.com.uk.com.uk.com.uk.com.uk.com.uk.com.uk.com.uk.com.uk",
+      "improvement": -41.18,
+      "scores": {
+        "relevance_normal": 0.25,
+        "relevance_enhanced": 0.0,
+        "concept_normal": 0.0,
+        "concept_enhanced": 0.0,
+        "quality_normal": 0.6000000000000001,
+        "quality_enhanced": 0.5,
+        "specificity_normal": 0.0,
+        "specificity_enhanced": 0.0,
+        "completeness_normal": 0.0,
+        "completeness_enhanced": 0.0
+      }
+    },
+    {
+      "test_id": "test_015",
+      "original_query": "What training programs are available?",
+      "enhanced_prompt": "[CONCEPT ANALYSIS]\nPrimary Category: weather\nKey Concepts: rain\nHigh Confidence Concepts: \nContext Understanding: This query relates to weather domain and involves concepts like rain.\n\n[ORIGINAL QUERY]\nWhat training programs are available?\n\n[ENHANCED CONTEXT]\nPlease provide a response that considers the weather context and addresses the key concepts: rain.",
+      "normal_response": "I'm still on the training program...",
+      "enhanced_response": "weather.weather.weather.weather.weather",
+      "improvement": -60.53,
+      "scores": {
+        "relevance_normal": 0.4333333333333333,
+        "relevance_enhanced": 0.0,
+        "concept_normal": 0.19999999999999998,
+        "concept_enhanced": 0.0,
+        "quality_normal": 0.5,
+        "quality_enhanced": 0.5,
+        "specificity_normal": 0.0,
+        "specificity_enhanced": 0.0,
+        "completeness_normal": 0.13333333333333333,
+        "completeness_enhanced": 0.0
+      }
+    }
+  ],
+  "summary": {
+    "summary": {
+      "total_tests": 15,
+      "avg_improvement": -20.23,
+      "positive_improvements": 3,
+      "success_rate": 20.0
+    },
+    "metric_analysis": {
+      "relevance": {
+        "avg_normal": 0.142,
+        "avg_enhanced": 0.03,
+        "improvement_percent": -78.91
+      },
+      "concept": {
+        "avg_normal": 0.04,
+        "avg_enhanced": 0.04,
+        "improvement_percent": 0.0
+      },
+      "quality": {
+        "avg_normal": 0.587,
+        "avg_enhanced": 0.48,
+        "improvement_percent": -18.18
+      },
+      "specificity": {
+        "avg_normal": 0.0,
+        "avg_enhanced": 0.027,
+        "improvement_percent": 0
+      },
+      "completeness": {
+        "avg_normal": 0.08,
+        "avg_enhanced": 0.018,
+        "improvement_percent": -77.78
+      }
+    },
+    "category_analysis": {
+      "business": {
+        "count": 15,
+        "avg_improvement": -20.23,
+        "positive_improvements": 3
+      }
+    },
+    "timestamp": "2025-09-20T21:19:41.314020"
+  }
+}

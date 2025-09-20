@@ -64,6 +64,11 @@ class PromptConceptEnhancer:
             "financial": [
                 "money", "cost", "price", "payment", "budget", "invoice", "bill",
                 "discount", "tax", "profit", "expense", "financial", "banking"
+            ],
+            "complex": [
+                "demographic", "cultural", "digital", "economic", "social", "political",
+                "strategy", "analysis", "impact", "effect", "shift", "identity", "context",
+                "implication", "consequence", "transformation", "evolution", "dynamic"
             ]
         }
 
@@ -85,7 +90,9 @@ class PromptConceptEnhancer:
         # Extract concepts by category
         for category, keywords in self.concept_categories.items():
             for keyword in keywords:
-                if keyword in text_lower:
+                # Use word boundaries to avoid substring matches
+                import re
+                if re.search(r'\b' + re.escape(keyword) + r'\b', text_lower):
                     # Calculate weight based on keyword importance and frequency
                     weight = text_lower.count(keyword) * self._get_keyword_importance(keyword)
                     confidence = self._calculate_confidence(keyword, text_lower)
