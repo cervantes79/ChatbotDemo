@@ -280,15 +280,15 @@ Please answer the question based on the provided context."""
             if action_type == ActionType.DIRECT_RESPONSE:
                 response = self.execute_direct_response(user_query)
                 action_name = "ICAR Direct Response"
-                
+
             elif action_type == ActionType.CONCEPT_SEARCH:
                 response = self.execute_concept_search(user_query)
                 action_name = "ICAR Concept-Based Retrieval"
-                
+
             elif action_type == ActionType.SEMANTIC_SEARCH:
                 response = self.execute_semantic_search(user_query)
                 action_name = "ICAR Semantic Search"
-                
+
             elif action_type == ActionType.WEATHER_API:
                 response = self.execute_weather_api(user_query)
                 action_name = "ICAR Weather API Call"
